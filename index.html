@@ -66,7 +66,7 @@
 
   
 
-  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
 <script src="/js/third-party/math/mathjax.js" defer></script>
 
 
@@ -74,7 +74,119 @@
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
-</head>
+<style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
@@ -148,18 +260,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-count">14</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-count">17</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -240,42 +352,64 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>::: center<br><strong>安徽理工大学</strong></p>
-<p><strong>2024–2025（2）信息安全的数学基础试卷B</strong><br>:::</p>
-<p>::: center</p>
-<hr>
-<p>  试卷重排：[anyunyeyi]{.underline}      </p>
-<hr>
-<p>:::</p>
-<hr>
+          <div class="center">
+<p><strong>安徽理工大学</strong></p>
+<p><strong>2024–2025（2）信息安全的数学基础试卷B</strong></p>
+</div>
+<div class="center">
+<table>
+<tbody>
+<tr>
+<td style="text-align: left;">试卷重排：<u>anyunyeyi</u></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr />
 <p>height 1pt</p>
-<h1 id="4道（每题10分，共40分）"><a href="#4道（每题10分，共40分）" class="headerlink" title="4道（每题10分，共40分）"></a>4道（每题10分，共40分）</h1><ol>
-<li><p>证明：1387 是对于基 2 的伪素数，但不是对于基 2 的强伪素数.</p>
-</li>
-<li><p>设<br>$\sigma &#x3D; \begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 \ 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 1 \end{pmatrix}$，<br>$\tau &#x3D; \begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 \ 5 &amp; 3 &amp; 4 &amp; 2 &amp; 6 &amp; 1 \end{pmatrix}$，计算<br>$\sigma\tau$，$\tau\sigma$，$\sigma^{-1}$.</p>
-</li>
-<li><p>运用广义欧几里得除法求整数 $s,t$ 使得<br>$s \cdot a + t \cdot b &#x3D; (a,b)$.</p>
-<p>$(1613, \quad 3589)$</p>
-</li>
-<li><p>请写出模9 的一个全为素数的完全剩余系.请写出模 10 的简化剩余系.</p>
-</li>
+<h1 id="道每题10分共40分">4道（每题10分，共40分）</h1>
+<ol type="1">
+<li><p>证明：1387 是对于基 2 的伪素数，但不是对于基 2
+的强伪素数.</p></li>
+<li><p>设 <span class="math inline">$\sigma = \begin{pmatrix} 1 &amp; 2
+&amp; 3 &amp; 4 &amp; 5 &amp; 6 \\ 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6
+&amp; 1 \end{pmatrix}$</span>， <span class="math inline">$\tau =
+\begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 \\ 5 &amp; 3
+&amp; 4 &amp; 2 &amp; 6 &amp; 1 \end{pmatrix}$</span>，计算 <span
+class="math inline"><em>σ</em><em>τ</em></span>，<span
+class="math inline"><em>τ</em><em>σ</em></span>，<span
+class="math inline"><em>σ</em><sup>−1</sup></span>.</p></li>
+<li><p>运用广义欧几里得除法求整数 <span
+class="math inline"><em>s</em>, <em>t</em></span> 使得 <span
+class="math inline"><em>s</em> ⋅ <em>a</em> + <em>t</em> ⋅ <em>b</em> = (<em>a</em>, <em>b</em>)</span>.</p>
+<p><span class="math inline">(1613,  3589)</span></p></li>
+<li><p>请写出模9 的一个全为素数的完全剩余系.请写出模 10
+的简化剩余系.</p></li>
 </ol>
-<h1 id="3道（12，13，15分）"><a href="#3道（12，13，15分）" class="headerlink" title="3道（12，13，15分）"></a>3道（12，13，15分）</h1><ol start="5">
-<li><p>求解同余式 $x^4 - 3x +1 \equiv 0 \pmod{125}$ 注意到$125 &#x3D; 5^3$.</p>
-</li>
-<li><p>求解同余式<br>$3x^{14} + 4x^{13} + 2x^{11}+x^9 + x^6 + x^3 + 12x^2 + x \equiv 0 \pmod{7}$.</p>
-</li>
-<li><p>判断同余式 $x^2 \equiv 79 \pmod{105}$的可解性，若可请解求出.</p>
-</li>
+<h1 id="道121315分">3道（12，13，15分）</h1>
+<ol start="5" type="1">
+<li><p>求解同余式 <span
+class="math inline"><em>x</em><sup>4</sup> − 3<em>x</em> + 1 ≡ 0 (mod  125)</span>
+注意到<span class="math inline">125 = 5<sup>3</sup></span>.</p></li>
+<li><p>求解同余式 <span
+class="math inline">3<em>x</em><sup>14</sup> + 4<em>x</em><sup>13</sup> + 2<em>x</em><sup>11</sup> + <em>x</em><sup>9</sup> + <em>x</em><sup>6</sup> + <em>x</em><sup>3</sup> + 12<em>x</em><sup>2</sup> + <em>x</em> ≡ 0 (mod  7)</span>.</p></li>
+<li><p>判断同余式 <span
+class="math inline"><em>x</em><sup>2</sup> ≡ 79 (mod  105)</span>的可解性，若可请解求出.</p></li>
 </ol>
-<h1 id="2道（每题10分，共20分）"><a href="#2道（每题10分，共20分）" class="headerlink" title="2道（每题10分，共20分）"></a>2道（每题10分，共20分）</h1><ol start="8">
-<li><p>求模 31 的所有原根。求模 $31^2$ 的原根.</p>
-</li>
-<li><p>求解同余式 $x^{22} \equiv 33 \pmod{41}$</p>
-<p>::: center<br>   0    1    2    3    4    5    6    7    8    9</p>
-<hr>
-<p>   0        40   26   15   12   22   1    39   38   30<br>   1   8    3    27   31   25   37   24   33   16   9<br>   2   34   14   29   36   13   4    17   5    11   7<br>   3   23   28   10   18   19   21   2    32   35   6<br>   4   20<br>:::</p>
-</li>
+<h1 id="道每题10分共20分">2道（每题10分，共20分）</h1>
+<ol start="8" type="1">
+<li><p>求模 31 的所有原根。求模 <span
+class="math inline">31<sup>2</sup></span> 的原根.</p></li>
+<li><p>求解同余式 <span
+class="math inline"><em>x</em><sup>22</sup> ≡ 33 (mod  41)</span></p>
+<div class="center">
+<pre><code>   0    1    2    3    4    5    6    7    8    9</code></pre>
+<hr />
+<p>0 40 26 15 12 22 1 39 38 30 1 8 3 27 31 25 37 24 33 16 9 2 34 14 29
+36 13 4 17 5 11 7 3 23 28 10 18 19 21 2 32 35 6 4 20</p>
+</div></li>
 </ol>
 
       
@@ -358,37 +492,150 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="🚀-Hexo-博客更新标准化流程"><a href="#🚀-Hexo-博客更新标准化流程" class="headerlink" title="🚀 Hexo 博客更新标准化流程"></a>🚀 Hexo 博客更新标准化流程</h1><p>随着博客全面转向计算机基础 (408) 和考研数学一的记录，后续会有大量带有代码块和复杂公式的笔记产出。为了避免每次更新都要靠记忆去回忆命令行，特在此沉淀一份标准的 Hexo 博客更新流程，作为自己的“第二大脑”备忘录。</p>
-<hr>
-<h2 id="🛠️-第一步：新建文章-Create"><a href="#🛠️-第一步：新建文章-Create" class="headerlink" title="🛠️ 第一步：新建文章 (Create)"></a>🛠️ 第一步：新建文章 (Create)</h2><p>不要手动新建 <code>.md</code> 文件！手动新建会导致时间戳缺失或格式错误。</p>
-<ol>
-<li>打开 VS Code，调出终端（确保是 PowerShell 环境），进入博客根目录 <code>D:\myblog</code>。</li>
-<li>运行新建命令：<br><code>hexo new &quot;你的文章标题&quot;</code></li>
-<li>执行后，Hexo 会自动在 <code>source/_posts/</code> 目录下生成一个同名的 Markdown 文件，并且自动填充好当前的精准时间。</li>
+          <h1 id="hexo-博客更新标准化流程">🚀 Hexo 博客更新标准化流程</h1>
+<p>随着博客全面转向计算机基础 (408)
+和考研数学一的记录，后续会有大量带有代码块和复杂公式的笔记产出。为了避免每次更新都要靠记忆去回忆命令行，特在此沉淀一份标准的
+Hexo 博客更新流程，作为自己的“第二大脑”备忘录。</p>
+<hr />
+<h2 id="第一步新建文章-create">🛠️ 第一步：新建文章 (Create)</h2>
+<p>不要手动新建 <code>.md</code>
+文件！手动新建会导致时间戳缺失或格式错误。</p>
+<ol type="1">
+<li>打开 VS Code，调出终端（确保是 PowerShell 环境），进入博客根目录
+<code>D:\myblog</code>。</li>
+<li>运行新建命令： <code>hexo new "你的文章标题"</code></li>
+<li>执行后，Hexo 会自动在 <code>source/_posts/</code>
+目录下生成一个同名的 Markdown 文件，并且自动填充好当前的精准时间。</li>
 </ol>
-<hr>
-<h2 id="📝-第二步：完善文章头部信息-Front-matter"><a href="#📝-第二步：完善文章头部信息-Front-matter" class="headerlink" title="📝 第二步：完善文章头部信息 (Front-matter)"></a>📝 第二步：完善文章头部信息 (Front-matter)</h2><p>打开刚刚生成的文件，最上方的 <code>---</code> 包围区域是文章的元数据。需要在此处配置好分类（Categories）和标签（Tags），以便自动归档到左侧边栏。</p>
-<p>标准格式参考：<br><code>categories:</code> 下方使用 <code>- [主分类, 子分类]</code> 的格式配置多级分类。<br><code>tags:</code> 下方使用 <code>- 标签名</code> 的格式配置多个标签。</p>
-<hr>
-<h2 id="🔍-第三步：本地预览-Preview"><a href="#🔍-第三步：本地预览-Preview" class="headerlink" title="🔍 第三步：本地预览 (Preview)"></a>🔍 第三步：本地预览 (Preview)</h2><p>在把文章推送到外网之前，先在本地看看排版效果（特别是 C++ 代码高亮和 LaTeX 数学公式是否正常渲染）。</p>
-<p>在终端输入：<br><code>hexo server</code></p>
-<p>运行后，在浏览器中打开 <code>http://localhost:4000</code> 即可实时预览。修改 Markdown 文件并保存后，网页会自动刷新。确认无误后，在终端按 <code>Ctrl + C</code> 退出预览模式。</p>
-<hr>
-<h2 id="🚀-第四步：一键生成与部署-Deploy"><a href="#🚀-第四步：一键生成与部署-Deploy" class="headerlink" title="🚀 第四步：一键生成与部署 (Deploy)"></a>🚀 第四步：一键生成与部署 (Deploy)</h2><p>由于使用的是 Windows PowerShell，不支持传统的 <code>&amp;&amp;</code> 连接符，统一使用分号 <code>;</code> 来串联命令。</p>
-<p><strong>专属一键部署指令：</strong><br><code>hexo clean; hexo g -d</code></p>
-<p><strong>指令拆解说明：</strong></p>
-<ul>
-<li><code>hexo clean</code>：清除本地缓存。</li>
-<li><code>hexo g -d</code>：生成静态网页文件并立即自动部署到 GitHub。</li>
-</ul>
-<hr>
-<h2 id="💡-常见踩坑记录"><a href="#💡-常见踩坑记录" class="headerlink" title="💡 常见踩坑记录"></a>💡 常见踩坑记录</h2><ol>
-<li><strong>首页 README.md 丢失问题</strong>：<br>如果配置了 GitHub 仓库的主页介绍（<code>README.md</code>），一定要把该文件放在本地博客的 <code>source</code> 文件夹下，并在 <code>_config.yml</code> 中设置 <code>skip_render: README.md</code>。否则每次 <code>hexo d</code> 都会把它覆盖或转化成网页。</li>
-<li><strong>时间戳报错</strong>：<br>如果手动创建了文件，记得把头部的 <code>date</code> 修改为具体的标准时间（如 <code>2026-02-15 12:00:00</code>），否则 Hexo 编译会报错。</li>
+<hr />
+<h2 id="第二步完善文章头部信息-front-matter">📝 第二步：完善文章头部信息
+(Front-matter)</h2>
+<p>打开刚刚生成的文件，最上方的 <code>---</code>
+包围区域是文章的元数据。需要在此处配置好分类（Categories）和标签（Tags），以便自动归档到左侧边栏。</p>
+<p>标准格式参考： <code>categories:</code> 下方使用
+<code>- [主分类, 子分类]</code> 的格式配置多级分类。 <code>tags:</code>
+下方使用 <code>- 标签名</code> 的格式配置多个标签。</p>
+<hr />
+<h2 id="第三步本地预览-preview">🔍 第三步：本地预览 (Preview)</h2>
+<p>在把文章推送到外网之前，先在本地看看排版效果（特别是 C++ 代码高亮和
+LaTeX 数学公式是否正常渲染）。</p>
+<p>在终端输入： <code>hexo server</code></p>
+<p>运行后，在浏览器中打开 <code>http://localhost:4000</code>
+即可实时预览。修改 Markdown
+文件并保存后，网页会自动刷新。确认无误后，在终端按 <code>Ctrl + C</code>
+退出预览模式。</p>
+<hr />
+<h2 id="第四步一键生成与部署-deploy">🚀 第四步：一键生成与部署
+(Deploy)</h2>
+<p>由于使用的是 Windows PowerShell，不支持传统的 <code>&amp;&amp;</code>
+连接符，统一使用分号 <code>;</code> 来串联命令。</p>
+<p><strong>专属一键部署指令：</strong>
+<code>hexo clean; hexo g -d</code></p>
+<p><strong>指令拆解说明：</strong> *
+<code>hexo clean</code>：清除本地缓存。 *
+<code>hexo g -d</code>：生成静态网页文件并立即自动部署到 GitHub。</p>
+<hr />
+<h2 id="常见踩坑记录">💡 常见踩坑记录</h2>
+<ol type="1">
+<li><strong>首页 README.md 丢失问题</strong>： 如果配置了 GitHub
+仓库的主页介绍（<code>README.md</code>），一定要把该文件放在本地博客的
+<code>source</code> 文件夹下，并在 <code>_config.yml</code> 中设置
+<code>skip_render: README.md</code>。否则每次 <code>hexo d</code>
+都会把它覆盖或转化成网页。</li>
+<li><strong>时间戳报错</strong>： 如果手动创建了文件，记得把头部的
+<code>date</code> 修改为具体的标准时间（如
+<code>2026-02-15 12:00:00</code>），否则 Hexo 编译会报错。</li>
 </ol>
 <blockquote>
 <p>保持输出，拒绝机械抄书。Focus on 408 &amp; Math! 🏃</p>
 </blockquote>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2026/02/15/LaTeX-%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%B8%B2%E6%9F%93%E6%B5%8B%E8%AF%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="anyunyeyi">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CS & Math | anyunyeyi">
+      <meta itemprop="description" content="一名在代码与数学之间探索的大学生的个人博客">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | CS & Math | anyunyeyi">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2026/02/15/LaTeX-%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%B8%B2%E6%9F%93%E6%B5%8B%E8%AF%95/" class="post-title-link" itemprop="url">LaTeX 数学公式渲染测试</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2026-02-15 14:00:00 / 修改时间：17:51:53" itemprop="dateCreated datePublished" datetime="2026-02-15T14:00:00+08:00">2026-02-15</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%B5%8B%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">测试</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="见证奇迹的时刻">🚀 见证奇迹的时刻</h1>
+<p>如果以下公式能够完美显示，说明你的 CS &amp; Math
+博客彻底脱胎换骨了！</p>
+<h2 id="行内公式-inline">1. 行内公式 (Inline)</h2>
+<p>这是大名鼎鼎的爱因斯坦质能方程：<span class="math inline"><em>E</em> = <em>m</em><em>c</em><sup>2</sup></span>，以及我们在考研高数中经常用到的极限定义：<span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.798ex;" xmlns="http://www.w3.org/2000/svg" width="15.312ex" height="2.76ex" role="img" focusable="false" viewBox="0 -867.1 6768 1219.8"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="munder"><g data-mml-node="mo"><path data-c="6C" d="M42 46H56Q95 46 103 60V68Q103 77 103 91T103 124T104 167T104 217T104 272T104 329Q104 366 104 407T104 482T104 542T103 586T103 603Q100 622 89 628T44 637H26V660Q26 683 28 683L38 684Q48 685 67 686T104 688Q121 689 141 690T171 693T182 694H185V379Q185 62 186 60Q190 52 198 49Q219 46 247 46H263V0H255L232 1Q209 2 183 2T145 3T107 3T57 1L34 0H26V46H42Z"></path><path data-c="69" d="M69 609Q69 637 87 653T131 669Q154 667 171 652T188 609Q188 579 171 564T129 549Q104 549 87 564T69 609ZM247 0Q232 3 143 3Q132 3 106 3T56 1L34 0H26V46H42Q70 46 91 49Q100 53 102 60T104 102V205V293Q104 345 102 359T88 378Q74 385 41 385H30V408Q30 431 32 431L42 432Q52 433 70 434T106 436Q123 437 142 438T171 441T182 442H185V62Q190 52 197 50T232 46H255V0H247Z" transform="translate(278,0)"></path><path data-c="6D" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q351 442 364 440T387 434T406 426T421 417T432 406T441 395T448 384T452 374T455 366L457 361L460 365Q463 369 466 373T475 384T488 397T503 410T523 422T546 432T572 439T603 442Q729 442 740 329Q741 322 741 190V104Q741 66 743 59T754 49Q775 46 803 46H819V0H811L788 1Q764 2 737 2T699 3Q596 3 587 0H579V46H595Q656 46 656 62Q657 64 657 200Q656 335 655 343Q649 371 635 385T611 402T585 404Q540 404 506 370Q479 343 472 315T464 232V168V108Q464 78 465 68T468 55T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z" transform="translate(556,0)"></path></g><g data-mml-node="TeXAtom" transform="translate(1422,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="mo" transform="translate(572,0)"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g><g data-mml-node="mn" transform="translate(1572,0)"><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path></g></g></g><g data-mml-node="mfrac" transform="translate(3103.8,0)"><g data-mml-node="mrow" transform="translate(220,394) scale(0.707)"><g data-mml-node="mi"><path data-c="73" d="M295 316Q295 356 268 385T190 414Q154 414 128 401Q98 382 98 349Q97 344 98 336T114 312T157 287Q175 282 201 278T245 269T277 256Q294 248 310 236T342 195T359 133Q359 71 321 31T198 -10H190Q138 -10 94 26L86 19L77 10Q71 4 65 -1L54 -11H46H42Q39 -11 33 -5V74V132Q33 153 35 157T45 162H54Q66 162 70 158T75 146T82 119T101 77Q136 26 198 26Q295 26 295 104Q295 133 277 151Q257 175 194 187T111 210Q75 227 54 256T33 318Q33 357 50 384T93 424T143 442T187 447H198Q238 447 268 432L283 424L292 431Q302 440 314 448H322H326Q329 448 335 442V310L329 304H301Q295 310 295 316Z"></path><path data-c="69" d="M69 609Q69 637 87 653T131 669Q154 667 171 652T188 609Q188 579 171 564T129 549Q104 549 87 564T69 609ZM247 0Q232 3 143 3Q132 3 106 3T56 1L34 0H26V46H42Q70 46 91 49Q100 53 102 60T104 102V205V293Q104 345 102 359T88 378Q74 385 41 385H30V408Q30 431 32 431L42 432Q52 433 70 434T106 436Q123 437 142 438T171 441T182 442H185V62Q190 52 197 50T232 46H255V0H247Z" transform="translate(394,0)"></path><path data-c="6E" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z" transform="translate(672,0)"></path></g><g data-mml-node="mo" transform="translate(1228,0)"><path data-c="2061" d=""></path></g><g data-mml-node="mi" transform="translate(1394.7,0)"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g></g><g data-mml-node="mi" transform="translate(713.1,-345) scale(0.707)"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><rect width="1590.6" height="60" x="120" y="220"></rect></g><g data-mml-node="mo" transform="translate(5212.2,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mn" transform="translate(6268,0)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></g></g></svg></mjx-container></span>。</p>
+<h2 id="独立公式-display">2. 独立公式 (Display)</h2>
+<p>下面是一道经典的考研数学一微积分真题中的牛顿-莱布尼茨公式： <span class="math display">∫<sub><em>a</em></sub><sup><em>b</em></sup><em>f</em>(<em>x</em>)<em>d</em><em>x</em> = <em>F</em>(<em>b</em>) − <em>F</em>(<em>a</em>)</span></p>
+<h2 id="矩阵与线性代数">3. 矩阵与线性代数</h2>
+<p>考研线代中必考的特征值求解矩阵： <span class="math display"><mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -2.149ex;" xmlns="http://www.w3.org/2000/svg" width="18.79ex" height="5.43ex" role="img" focusable="false" viewBox="0 -1450 8305.1 2400"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mrow"><g data-mml-node="mo" transform="translate(0 -0.5)"><path data-c="5B" d="M247 -949V1450H516V1388H309V-887H516V-949H247Z"></path></g><g data-mml-node="mtable" transform="translate(528,0)"><g data-mml-node="mtr" transform="translate(0,700)"><g data-mml-node="mtd"><g data-mml-node="msub"><g data-mml-node="mi"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g><g data-mml-node="TeXAtom" transform="translate(562,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" transform="translate(500,0)"></path></g></g></g><g data-mml-node="mo" transform="translate(1541.3,0)"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path></g><g data-mml-node="mi" transform="translate(2541.6,0)"><path data-c="1D706" d="M166 673Q166 685 183 694H202Q292 691 316 644Q322 629 373 486T474 207T524 67Q531 47 537 34T546 15T551 6T555 2T556 -2T550 -11H482Q457 3 450 18T399 152L354 277L340 262Q327 246 293 207T236 141Q211 112 174 69Q123 9 111 -1T83 -12Q47 -12 47 20Q47 37 61 52T199 187Q229 216 266 252T321 306L338 322Q338 323 288 462T234 612Q214 657 183 657Q166 657 166 673Z"></path></g></g><g data-mml-node="mtd" transform="translate(5027.3,0)"><g data-mml-node="msub"><g data-mml-node="mi"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g><g data-mml-node="TeXAtom" transform="translate(562,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" transform="translate(500,0)"></path></g></g></g></g></g><g data-mml-node="mtr" transform="translate(0,-700)"><g data-mml-node="mtd" transform="translate(902.7,0)"><g data-mml-node="msub"><g data-mml-node="mi"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g><g data-mml-node="TeXAtom" transform="translate(562,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" transform="translate(500,0)"></path></g></g></g></g><g data-mml-node="mtd" transform="translate(4124.6,0)"><g data-mml-node="msub"><g data-mml-node="mi"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g><g data-mml-node="TeXAtom" transform="translate(562,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" transform="translate(500,0)"></path></g></g></g><g data-mml-node="mo" transform="translate(1541.3,0)"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path></g><g data-mml-node="mi" transform="translate(2541.6,0)"><path data-c="1D706" d="M166 673Q166 685 183 694H202Q292 691 316 644Q322 629 373 486T474 207T524 67Q531 47 537 34T546 15T551 6T555 2T556 -2T550 -11H482Q457 3 450 18T399 152L354 277L340 262Q327 246 293 207T236 141Q211 112 174 69Q123 9 111 -1T83 -12Q47 -12 47 20Q47 37 61 52T199 187Q229 216 266 252T321 306L338 322Q338 323 288 462T234 612Q214 657 183 657Q166 657 166 673Z"></path></g></g></g></g><g data-mml-node="mo" transform="translate(7777.1,0) translate(0 -0.5)"><path data-c="5D" d="M11 1388V1450H280V-949H11V-887H218V1388H11Z"></path></g></g></g></g></svg></mjx-container></span></p>
 
       
     </div>
@@ -471,8 +718,12 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="🚀-自动化写作链路测试"><a href="#🚀-自动化写作链路测试" class="headerlink" title="🚀 自动化写作链路测试"></a>🚀 自动化写作链路测试</h1><p>这是我在 Obsidian 中建立的文档，接下来我将把它扔给 Typora 进行图片插入测试。</p>
-<p>下面是测试图片：<br><img src="https://raw.githubusercontent.com/anyunyeyi/blog-images/main/img/image-20260215173215052.png" alt="image-20260215173215052"></p>
+          <h1 id="自动化写作链路测试">🚀 自动化写作链路测试</h1>
+<p>这是我在 Obsidian 中建立的文档，接下来我将把它扔给 Typora
+进行图片插入测试。</p>
+<p>下面是测试图片： <img
+src="https://raw.githubusercontent.com/anyunyeyi/blog-images/main/img/image-20260215173215052.png"
+alt="image-20260215173215052" /></p>
 
       
     </div>
@@ -561,11 +812,12 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="计算机组成原理：自底向上理解系统"><a href="#计算机组成原理：自底向上理解系统" class="headerlink" title="计算机组成原理：自底向上理解系统"></a>计算机组成原理：自底向上理解系统</h1><p>计组是 408 中的“硬骨头”，涉及大量的硬件细节和数据通路。这部分笔记将致力于把抽象的 CPU 设计和存储器层次结构具象化。</p>
-<p><strong>待更新列表：</strong></p>
-<ul>
-<li>暂无</li>
-</ul>
+          <h1
+id="计算机组成原理自底向上理解系统">计算机组成原理：自底向上理解系统</h1>
+<p>计组是 408
+中的“硬骨头”，涉及大量的硬件细节和数据通路。这部分笔记将致力于把抽象的
+CPU 设计和存储器层次结构具象化。</p>
+<p><strong>待更新列表：</strong> - 暂无</p>
 
       
     </div>
@@ -654,104 +906,11 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="数据结构：代码能力的基石"><a href="#数据结构：代码能力的基石" class="headerlink" title="数据结构：代码能力的基石"></a>数据结构：代码能力的基石</h1><p>数据结构是 408 中最考验逻辑和代码功底的一科。这里将记录核心数据结构的底层逻辑，所有涉及到的核心算法（如树的遍历、图的搜索）都会附上规范的 C++ 手撕代码。</p>
-<p><strong>待更新列表：</strong></p>
-<ul>
-<li>暂无</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2026/02/14/408-os/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="anyunyeyi">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="CS & Math | anyunyeyi">
-      <meta itemprop="description" content="一名在代码与数学之间探索的大学生的个人博客">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | CS & Math | anyunyeyi">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2026/02/14/408-os/" class="post-title-link" itemprop="url">408考研：操作系统并发与内存管理</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2026-02-14 23:55:00" itemprop="dateCreated datePublished" datetime="2026-02-14T23:55:00+08:00">2026-02-14</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2026-02-15 17:09:05" itemprop="dateModified" datetime="2026-02-15T17:09:05+08:00">2026-02-15</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E8%80%83%E7%A0%94408/" itemprop="url" rel="index"><span itemprop="name">考研408</span></a>
-        </span>
-          ，
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E8%80%83%E7%A0%94408/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" itemprop="url" rel="index"><span itemprop="name">操作系统</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="操作系统：软硬件的调度中枢"><a href="#操作系统：软硬件的调度中枢" class="headerlink" title="操作系统：软硬件的调度中枢"></a>操作系统：软硬件的调度中枢</h1><p>操作系统的核心在于“管理”二字。这里将死磕最容易出综合大题的进程同步模型以及虚拟内存管理机制。</p>
-<p><strong>待更新列表：</strong></p>
-<ul>
-<li>暂无</li>
-</ul>
+          <h1 id="数据结构代码能力的基石">数据结构：代码能力的基石</h1>
+<p>数据结构是 408
+中最考验逻辑和代码功底的一科。这里将记录核心数据结构的底层逻辑，所有涉及到的核心算法（如树的遍历、图的搜索）都会附上规范的
+C++ 手撕代码。</p>
+<p><strong>待更新列表：</strong> - 暂无</p>
 
       
     </div>
@@ -840,11 +999,101 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="计算机网络：连接世界的协议栈"><a href="#计算机网络：连接世界的协议栈" class="headerlink" title="计算机网络：连接世界的协议栈"></a>计算机网络：连接世界的协议栈</h1><p>计网知识点繁杂且琐碎。复习策略是沿着 TCP&#x2F;IP 模型自顶向下，抓大放小，重点理解各层协议的交互过程。</p>
-<p><strong>待更新列表：</strong></p>
-<ul>
-<li>暂无</li>
-</ul>
+          <h1 id="计算机网络连接世界的协议栈">计算机网络：连接世界的协议栈</h1>
+<p>计网知识点繁杂且琐碎。复习策略是沿着 TCP/IP
+模型自顶向下，抓大放小，重点理解各层协议的交互过程。</p>
+<p><strong>待更新列表：</strong> - 暂无</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2026/02/14/408-os/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="anyunyeyi">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CS & Math | anyunyeyi">
+      <meta itemprop="description" content="一名在代码与数学之间探索的大学生的个人博客">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | CS & Math | anyunyeyi">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2026/02/14/408-os/" class="post-title-link" itemprop="url">408考研：操作系统并发与内存管理</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2026-02-14 23:55:00" itemprop="dateCreated datePublished" datetime="2026-02-14T23:55:00+08:00">2026-02-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-02-15 17:09:05" itemprop="dateModified" datetime="2026-02-15T17:09:05+08:00">2026-02-15</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E8%80%83%E7%A0%94408/" itemprop="url" rel="index"><span itemprop="name">考研408</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E8%80%83%E7%A0%94408/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" itemprop="url" rel="index"><span itemprop="name">操作系统</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="操作系统软硬件的调度中枢">操作系统：软硬件的调度中枢</h1>
+<p>操作系统的核心在于“管理”二字。这里将死磕最容易出综合大题的进程同步模型以及虚拟内存管理机制。</p>
+<p><strong>待更新列表：</strong> - 暂无</p>
 
       
     </div>
@@ -933,11 +1182,11 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="高等数学：从严谨推导到计算技巧"><a href="#高等数学：从严谨推导到计算技巧" class="headerlink" title="高等数学：从严谨推导到计算技巧"></a>高等数学：从严谨推导到计算技巧</h1><p>高等数学是考研数学的重中之重。这里将专门收录极限、微积分、无穷级数等核心模块的推导与错题。后续的公式推导将全程使用 LaTeX 进行规范排版。</p>
-<p><strong>待更新列表：</strong></p>
-<ul>
-<li>多元函数微分学</li>
-</ul>
+          <h1
+id="高等数学从严谨推导到计算技巧">高等数学：从严谨推导到计算技巧</h1>
+<p>高等数学是考研数学的重中之重。这里将专门收录极限、微积分、无穷级数等核心模块的推导与错题。后续的公式推导将全程使用
+LaTeX 进行规范排版。</p>
+<p><strong>待更新列表：</strong> - 多元函数微分学</p>
 
       
     </div>
@@ -1026,104 +1275,9 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="线性代数：代数与几何的桥梁"><a href="#线性代数：代数与几何的桥梁" class="headerlink" title="线性代数：代数与几何的桥梁"></a>线性代数：代数与几何的桥梁</h1><p>线代的知识点非常抽象且容易混淆。这个分类下将重点梳理行列式计算、矩阵变换、向量空间以及二次型等核心概念。</p>
-<p><strong>待更新列表：</strong></p>
-<ul>
-<li>暂无</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2026/02/14/math-probability/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="anyunyeyi">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="CS & Math | anyunyeyi">
-      <meta itemprop="description" content="一名在代码与数学之间探索的大学生的个人博客">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | CS & Math | anyunyeyi">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2026/02/14/math-probability/" class="post-title-link" itemprop="url">考研数学一：概率论与数理统计大纲梳理</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2026-02-14 23:55:00" itemprop="dateCreated datePublished" datetime="2026-02-14T23:55:00+08:00">2026-02-14</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2026-02-15 17:09:18" itemprop="dateModified" datetime="2026-02-15T17:09:18+08:00">2026-02-15</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">考研数学</span></a>
-        </span>
-          ，
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6/%E6%A6%82%E7%8E%87%E8%AE%BA/" itemprop="url" rel="index"><span itemprop="name">概率论</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="概率论"><a href="#概率论" class="headerlink" title="概率论"></a>概率论</h1><p>考研的概率论侧重于计算。</p>
-<p><strong>待更新列表：</strong></p>
-<ul>
-<li>暂无</li>
-</ul>
+          <h1 id="线性代数代数与几何的桥梁">线性代数：代数与几何的桥梁</h1>
+<p>线代的知识点非常抽象且容易混淆。这个分类下将重点梳理行列式计算、矩阵变换、向量空间以及二次型等核心概念。</p>
+<p><strong>待更新列表：</strong> - 暂无</p>
 
       
     </div>
