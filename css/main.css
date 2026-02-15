@@ -1384,7 +1384,7 @@ pre code {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #78ff38;
+  background: #ff4113;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2824,20 +2824,4 @@ header.header {
   .sidebar-active .footer-fixed {
     left: 320px;
   }
-}
-/* 1. 全局稍微放大数学公式，并强制使用纯黑，对标 Obsidian */
-mjx-container {
-  font-size: 108% !important;
-  color: #000 !important;
-}
-/* 2. 独立公式增加上下留白，支持横向滚动 */
-mjx-container[display="true"] {
-  overflow-x: auto !important;
-  overflow-y: hidden !important;
-  padding-top: 0.5em !important;
-  padding-bottom: 0.5em !important;
-  margin-bottom: 0 !important;
-}
-mjx-container[display="true"]:focus {
-  outline: none !important;
 }
