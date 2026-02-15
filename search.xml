@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>408考研：计算机组成原理</title>
+    <url>/2026/02/14/408-computer-org/</url>
+    <content><![CDATA[<h1 id="计算机组成原理"><a class="markdownIt-Anchor" href="#计算机组成原理"></a> 计算机组成原理</h1>
+]]></content>
+      <categories>
+        <category>考研408</category>
+        <category>计算机组成原理</category>
+      </categories>
+      <tags>
+        <tag>考研408</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>408考研：数据结构</title>
     <url>/2026/02/14/408-data-structures/</url>
     <content><![CDATA[<h1 id="数据结构"><a class="markdownIt-Anchor" href="#数据结构"></a> 数据结构</h1>
@@ -54,19 +67,6 @@
       </tags>
   </entry>
   <entry>
-    <title>408考研：计算机组成原理</title>
-    <url>/2026/02/14/408-computer-org/</url>
-    <content><![CDATA[<h1 id="计算机组成原理"><a class="markdownIt-Anchor" href="#计算机组成原理"></a> 计算机组成原理</h1>
-]]></content>
-      <categories>
-        <category>考研408</category>
-        <category>计算机组成原理</category>
-      </categories>
-      <tags>
-        <tag>考研408</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>考研数学一：高等数学</title>
     <url>/2026/02/14/math-calculus/</url>
     <content><![CDATA[<h1 id="高等数学"><a class="markdownIt-Anchor" href="#高等数学"></a> 高等数学</h1>
@@ -102,23 +102,22 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2026/02/04/%E5%8D%9A%E5%AE%A2-helloworld/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2>
-<h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites"></a> Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <title>考研数学一：概率论与数理统计</title>
+    <url>/2026/02/14/math-probability/</url>
+    <content><![CDATA[<h1 id="概率论"><a class="markdownIt-Anchor" href="#概率论"></a> 概率论</h1>
+<p><strong>待更新列表：</strong></p>
+<ul>
+<li>暂无</li>
+</ul>
 ]]></content>
+      <categories>
+        <category>考研数学</category>
+        <category>概率论</category>
+      </categories>
+      <tags>
+        <tag>考研数学一</tag>
+        <tag>概率论与数理统计</tag>
+      </tags>
   </entry>
   <entry>
     <title>Hexo博客日常更新指南与备忘录</title>
@@ -179,21 +178,22 @@
       </tags>
   </entry>
   <entry>
-    <title>考研数学一：概率论与数理统计</title>
-    <url>/2026/02/14/math-probability/</url>
-    <content><![CDATA[<h1 id="概率论"><a class="markdownIt-Anchor" href="#概率论"></a> 概率论</h1>
-<p><strong>待更新列表：</strong></p>
-<ul>
-<li>暂无</li>
-</ul>
+    <title>Hello World</title>
+    <url>/2026/02/04/%E5%8D%9A%E5%AE%A2-helloworld/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2>
+<h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites"></a> Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-      <categories>
-        <category>考研数学</category>
-        <category>概率论</category>
-      </categories>
-      <tags>
-        <tag>考研数学一</tag>
-        <tag>概率论与数理统计</tag>
-      </tags>
   </entry>
 </search>
