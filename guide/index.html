@@ -20,15 +20,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js" defer></script>
 
-    <meta name="description" content="欢迎来到安理工区块链生存指南！这里记录了核心专业课的硬核推导与复习资料。      🚀 正在连接云端引擎，自动抓取最新硬核指南...    &#x2F;&#x2F; 1. 生成唯一的毫秒级指纹，让缓存彻底失效 const magicToken &#x3D; new Date().getTime();  fetch(&#96;https:&#x2F;&#x2F;api.github.com&#x2F;repos&#x2F;anyunyeyi&#x2F;AUST-Blockchain-">
+    <meta name="description" content="欢迎来到安理工区块链生存指南！这里记录了核心专业课的硬核推导与复习资料。      🚀 正在连接云端引擎，自动抓取最新硬核指南...    &#x2F;&#x2F; 使用当前日期（天）作为缓存指纹，既能绕过过旧缓存，又不会因为每毫秒都变导致重复请求 const dateToken &#x3D; new Date().toISOString().split(&#39;T&#39;)[0];  fetch(&#96;https:&#x2F;&#x2F;api.github">
 <meta property="og:type" content="website">
 <meta property="og:title" content="安理工区块链生存指南">
 <meta property="og:url" content="http://example.com/guide/index.html">
 <meta property="og:site_name" content="CS &amp; Math | anyunyeyi">
-<meta property="og:description" content="欢迎来到安理工区块链生存指南！这里记录了核心专业课的硬核推导与复习资料。      🚀 正在连接云端引擎，自动抓取最新硬核指南...    &#x2F;&#x2F; 1. 生成唯一的毫秒级指纹，让缓存彻底失效 const magicToken &#x3D; new Date().getTime();  fetch(&#96;https:&#x2F;&#x2F;api.github.com&#x2F;repos&#x2F;anyunyeyi&#x2F;AUST-Blockchain-">
+<meta property="og:description" content="欢迎来到安理工区块链生存指南！这里记录了核心专业课的硬核推导与复习资料。      🚀 正在连接云端引擎，自动抓取最新硬核指南...    &#x2F;&#x2F; 使用当前日期（天）作为缓存指纹，既能绕过过旧缓存，又不会因为每毫秒都变导致重复请求 const dateToken &#x3D; new Date().toISOString().split(&#39;T&#39;)[0];  fetch(&#96;https:&#x2F;&#x2F;api.github">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-02-15T02:00:00.000Z">
-<meta property="article:modified_time" content="2026-02-15T16:22:13.986Z">
+<meta property="article:modified_time" content="2026-02-15T16:25:31.321Z">
 <meta property="article:author" content="anyunyeyi">
 <meta property="article:tag" content="考研, 408, 数学, 计算机, Python">
 <meta name="twitter:card" content="summary">
@@ -234,10 +234,10 @@
 </div>
 
 <script>
-// 1. 生成唯一的毫秒级指纹，让缓存彻底失效
-const magicToken = new Date().getTime();
+// 使用当前日期（天）作为缓存指纹，既能绕过过旧缓存，又不会因为每毫秒都变导致重复请求
+const dateToken = new Date().toISOString().split('T')[0];
 
-fetch(`https://api.github.com/repos/anyunyeyi/AUST-Blockchain-Survival-Guide/contents/PDFs?t=${magicToken}`)
+fetch(`https://api.github.com/repos/anyunyeyi/AUST-Blockchain-Survival-Guide/contents/PDFs?t=${dateToken}`)
   .then(response => response.json())
   .then(data => {
     const container = document.getElementById('pdf-radar-container');
@@ -252,16 +252,18 @@ fetch(`https://api.github.com/repos/anyunyeyi/AUST-Blockchain-Survival-Guide/con
     pdfs.forEach(pdf => {
       const name = pdf.name.replace('.pdf', '');
       const encodedName = encodeURIComponent(pdf.name);
+      // 1. 获取 GitHub Pages 的直连地址
+      const rawUrl = `https://anyunyeyi.github.io/AUST-Blockchain-Survival-Guide/PDFs/${encodedName}`;
       
-      // 🚀 核心改动：回归直连地址，并强行注入时间戳指纹
-      const pdfUrl = `https://anyunyeyi.github.io/AUST-Blockchain-Survival-Guide/PDFs/${encodedName}?t=${magicToken}`;
+      // 2. 🚀 关键：使用 Google Docs Viewer 封装，它能解决 99% 的黑屏和报错问题
+      const googleViewerUrl = `https://docs.google.com/viewer?url=${encodeURIComponent(rawUrl)}&embedded=true`;
       
       const html = `
         <div style="margin-bottom: 60px;">
           <h3 style="border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 20px;">📖 ${name}</h3>
-          <iframe src="${pdfUrl}" width="100%" height="800px" style="border: none; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"></iframe>
+          <iframe src="${googleViewerUrl}" width="100%" height="800px" style="border: none; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"></iframe>
           <p style="text-align: center; margin-top: 15px;">
-             📥 <a href="${pdfUrl}" target="_blank" style="font-weight:bold; color:#0056b3;">下载直达：${name} (带水印完整版)</a>
+             📥 <a href="${rawUrl}" target="_blank" style="font-weight:bold; color:#0056b3;">下载直达：${name} (带水印完整版)</a>
           </p>
         </div>
       `;
