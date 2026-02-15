@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>408考研：计算机组成原理</title>
+    <url>/2026/02/14/408-computer-org/</url>
+    <content><![CDATA[<h1 id="计算机组成原理"><a class="markdownIt-Anchor" href="#计算机组成原理"></a> 计算机组成原理</h1>
+]]></content>
+      <categories>
+        <category>考研408</category>
+        <category>计算机组成原理</category>
+      </categories>
+      <tags>
+        <tag>考研408</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>408考研：数据结构</title>
     <url>/2026/02/14/408-data-structures/</url>
     <content><![CDATA[<h1 id="数据结构"><a class="markdownIt-Anchor" href="#数据结构"></a> 数据结构</h1>
@@ -20,6 +33,25 @@
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2026/02/04/%E5%8D%9A%E5%AE%A2-helloworld/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2>
+<h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites"></a> Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>408考研：计算机网络</title>
     <url>/2026/02/14/408-network/</url>
     <content><![CDATA[<h1 id="计算机网络"><a class="markdownIt-Anchor" href="#计算机网络"></a> 计算机网络</h1>
@@ -31,36 +63,6 @@
       <categories>
         <category>考研408</category>
         <category>计算机网络</category>
-      </categories>
-      <tags>
-        <tag>考研408</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>408考研：计算机组成原理</title>
-    <url>/2026/02/14/408-computer-org/</url>
-    <content><![CDATA[<h1 id="计算机组成原理"><a class="markdownIt-Anchor" href="#计算机组成原理"></a> 计算机组成原理</h1>
-]]></content>
-      <categories>
-        <category>考研408</category>
-        <category>计算机组成原理</category>
-      </categories>
-      <tags>
-        <tag>考研408</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>408考研：操作系统</title>
-    <url>/2026/02/14/408-os/</url>
-    <content><![CDATA[<h1 id="操作系统"><a class="markdownIt-Anchor" href="#操作系统"></a> 操作系统</h1>
-<p><strong>待更新列表：</strong></p>
-<ul>
-<li>暂无</li>
-</ul>
-]]></content>
-      <categories>
-        <category>考研408</category>
-        <category>操作系统</category>
       </categories>
       <tags>
         <tag>考研408</tag>
@@ -82,6 +84,41 @@
       <tags>
         <tag>考研数学一</tag>
         <tag>错题本</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>408考研：操作系统</title>
+    <url>/2026/02/14/408-os/</url>
+    <content><![CDATA[<h1 id="操作系统"><a class="markdownIt-Anchor" href="#操作系统"></a> 操作系统</h1>
+<p><strong>待更新列表：</strong></p>
+<ul>
+<li>暂无</li>
+</ul>
+]]></content>
+      <categories>
+        <category>考研408</category>
+        <category>操作系统</category>
+      </categories>
+      <tags>
+        <tag>考研408</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>信息安全期末复习笔记</title>
+    <url>/2026/02/15/%E6%9C%9F%E6%9C%AB-%E4%BF%A1%E5%AE%89%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p>本文档整理了《信息安全数学基础》的核心知识点…</p>
+<iframe src="/pdf/InfoSec.pdf" width="100%" height="800px" style="border: none; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    您的浏览器不支持内嵌预览，请点击下方链接下载 PDF。
+</iframe>
+<p>如果加载缓慢，你也可以 <a href="/pdf/InfoSec.pdf">点击这里直接下载 PDF</a>。</p>
+]]></content>
+      <categories>
+        <category>期末复习</category>
+        <category>信息安全的数学基础</category>
+      </categories>
+      <tags>
+        <tag>信息安全</tag>
+        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -118,25 +155,6 @@
       <tags>
         <tag>考研数学一</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2026/02/04/%E5%8D%9A%E5%AE%A2-helloworld/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2>
-<h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites"></a> Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
   </entry>
   <entry>
     <title>Hexo博客日常更新指南与备忘录</title>
