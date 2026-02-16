@@ -1385,7 +1385,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #bd181d;
+    background: #ff1106;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3007,5 +3007,116 @@ header.header {
   }
   .comments {
     padding: 10px 12px;
+  }
+}
+/* 1. 全局稍微放大数学公式，并强制使用纯黑，对标 Obsidian */
+.katex {
+  font-size: 1.08em !important;
+  color: #000 !important;
+}
+/* 2. 独立公式 (行间公式) 增加上下留白，支持横向滚动 */
+.katex-display {
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  padding-top: 0.5em !important;
+  padding-bottom: 0.5em !important;
+  margin-bottom: 0 !important;
+/* 配合滚动，防止部分长公式被意外截断 */
+  display: block;
+}
+/* 3. 去除点击或滚动时的外边框焦点 */
+.katex-display:focus {
+  outline: none !important;
+}
+/* 分类页面多列布局优化 */
+.category-all-page .category-all {
+/* 设置为你想要的列数，比如 2 列或 3 列 */
+  column-count: 3;
+/* 两列之间的间距 */
+  column-gap: 40px;
+}
+/* 防止单个主分类被从中间截断，分到两列显示 */
+.category-all-page .category-all > ul > li {
+  break-inside: avoid;
+  margin-bottom: 20px;
+}
+/* --- 标签页单行自动滚动 (跑马灯) 效果 --- */
+/* 1. 父容器隐藏溢出，防止出现原生的底部滚动条 */
+.tag-cloud {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+/* 2. 标签容器应用动画 */
+.tag-cloud-tags {
+  display: inline-block;
+  white-space: nowrap;
+/* 核心参数：15s 表示滚动一圈的时间，linear 表示匀速，infinite 表示无限循环。
+     如果你觉得滚动太快或太慢，可以修改 15s 这个数值 */
+  animation: tagMarquee 30s linear infinite;
+}
+/* 3. 交互优化：鼠标悬停时暂停动画，方便点击！ */
+.tag-cloud-tags:hover {
+  animation-play-state: paused;
+}
+/* 4. 定义动画轨迹：从右向左移动 */
+/* 5. 统一标签样式和间距 */
+.tag-cloud-tags a {
+  font-size: 16px !important; /* 统一字号 */
+  display: inline-block;
+  margin: 0 20px; /* 增加标签左右的呼吸感 */
+  transition: color 0.2s; /* 点击时的颜色渐变过渡 */
+}
+/* 期末指南分类卡片样式 */
+.qimo-dashboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 均分三列 */
+  gap: 20px; /* 卡片之间的间距 */
+  margin-top: 40px;
+}
+.qimo-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  background: #f9f9f9; /* 卡片底色 */
+  border-radius: 8px; /* 圆角 */
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease; /* 动画过渡效果 */
+  border: 1px solid #eee;
+}
+/* 鼠标悬停时的浮动和阴影效果 */
+.qimo-card:hover {
+  background: #fff;
+  transform: translateY(-5px); /* 向上浮动 */
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1); /* 增加阴影 */
+  color: #222;
+  border-bottom-color: transparent;
+}
+.qimo-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.4em;
+  border-bottom: none; /* 去除原生 h3 的下划线 */
+  padding-bottom: 0;
+}
+.qimo-card p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #777; /* 文章统计文字颜色稍微变灰 */
+}
+/* 手机端适配：变窄时自动切换为单列堆叠 */
+@media (max-width: 768px) {
+  .qimo-dashboard {
+    grid-template-columns: 1fr;
+  }
+}
+@keyframes tagMarquee {
+  0% {
+    transform: translateX(80%); /* 初始位置：偏右侧进入 */
+  }
+  100% {
+    transform: translateX(-100%); /* 结束位置：完全滚出左侧 */
   }
 }

@@ -21,6 +21,81 @@
       </tags>
   </entry>
   <entry>
+    <title>考研408：计算机网络</title>
+    <url>/2026/02/14/408-%E8%AE%A1%E7%BD%91/</url>
+    <content><![CDATA[<h1 id="计算机网络"><a class="markdownIt-Anchor" href="#计算机网络"></a> 计算机网络</h1>
+<p><strong>待更新列表：</strong></p>
+<ul>
+<li></li>
+</ul>
+]]></content>
+      <categories>
+        <category>408</category>
+        <category>计网</category>
+      </categories>
+      <tags>
+        <tag>408</tag>
+        <tag>计网</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo博客日常更新指南与备忘录</title>
+    <url>/2026/02/15/geek-hexo/</url>
+    <content><![CDATA[<h1 id="hexo-博客更新标准化流程"><a class="markdownIt-Anchor" href="#hexo-博客更新标准化流程"></a> 🚀 Hexo 博客更新标准化流程</h1>
+<p>随着博客全面转向计算机基础 (408) 和考研数学一的记录，后续会有大量带有代码块和复杂公式的笔记产出。为了避免每次更新都要靠记忆去回忆命令行，特在此沉淀一份标准的 Hexo 博客更新流程，作为自己的“第二大脑”备忘录。</p>
+<hr />
+<h2 id="️-第一步新建文章-create"><a class="markdownIt-Anchor" href="#️-第一步新建文章-create"></a> 🛠️ 第一步：新建文章 (Create)</h2>
+<p>不要手动新建 <code>.md</code> 文件！手动新建会导致时间戳缺失或格式错误。</p>
+<ol>
+<li>打开 VS Code，调出终端（确保是 PowerShell 环境），进入博客根目录 <code>D:\myblog</code>。</li>
+<li>运行新建命令：<br />
+<code>hexo new &quot;你的文章标题&quot;</code></li>
+<li>执行后，Hexo 会自动在 <code>source/_posts/</code> 目录下生成一个同名的 Markdown 文件，并且自动填充好当前的精准时间。</li>
+</ol>
+<hr />
+<h2 id="第二步完善文章头部信息-front-matter"><a class="markdownIt-Anchor" href="#第二步完善文章头部信息-front-matter"></a> 📝 第二步：完善文章头部信息 (Front-matter)</h2>
+<p>打开刚刚生成的文件，最上方的 <code>---</code> 包围区域是文章的元数据。需要在此处配置好分类（Categories）和标签（Tags），以便自动归档到左侧边栏。</p>
+<p>标准格式参考：<br />
+<code>categories:</code> 下方使用 <code>- [主分类, 子分类]</code> 的格式配置多级分类。<br />
+<code>tags:</code> 下方使用 <code>- 标签名</code> 的格式配置多个标签。</p>
+<hr />
+<h2 id="第三步本地预览-preview"><a class="markdownIt-Anchor" href="#第三步本地预览-preview"></a> 🔍 第三步：本地预览 (Preview)</h2>
+<p>在把文章推送到外网之前，先在本地看看排版效果（特别是 C++ 代码高亮和 LaTeX 数学公式是否正常渲染）。</p>
+<p>在终端输入：<br />
+<code>hexo server</code></p>
+<p>运行后，在浏览器中打开 <code>http://localhost:4000</code> 即可实时预览。修改 Markdown 文件并保存后，网页会自动刷新。确认无误后，在终端按 <code>Ctrl + C</code> 退出预览模式。</p>
+<hr />
+<h2 id="第四步一键生成与部署-deploy"><a class="markdownIt-Anchor" href="#第四步一键生成与部署-deploy"></a> 🚀 第四步：一键生成与部署 (Deploy)</h2>
+<p>由于使用的是 Windows PowerShell，不支持传统的 <code>&amp;&amp;</code> 连接符，统一使用分号 <code>;</code> 来串联命令。</p>
+<p><strong>专属一键部署指令：</strong><br />
+<code>hexo clean; hexo g -d</code></p>
+<p><strong>指令拆解说明：</strong></p>
+<ul>
+<li><code>hexo clean</code>：清除本地缓存。</li>
+<li><code>hexo g -d</code>：生成静态网页文件并立即自动部署到 GitHub。</li>
+</ul>
+<hr />
+<h2 id="常见踩坑记录"><a class="markdownIt-Anchor" href="#常见踩坑记录"></a> 💡 常见踩坑记录</h2>
+<ol>
+<li><strong>首页 <a href="http://README.md">README.md</a> 丢失问题</strong>：<br />
+如果配置了 GitHub 仓库的主页介绍（<code>README.md</code>），一定要把该文件放在本地博客的 <code>source</code> 文件夹下，并在 <code>_config.yml</code> 中设置 <code>skip_render: README.md</code>。否则每次 <code>hexo d</code> 都会把它覆盖或转化成网页。</li>
+<li><strong>时间戳报错</strong>：<br />
+如果手动创建了文件，记得把头部的 <code>date</code> 修改为具体的标准时间（如 <code>2026-02-15 12:00:00</code>），否则 Hexo 编译会报错。</li>
+</ol>
+<blockquote>
+<p>保持输出，拒绝机械抄书。Focus on 408 &amp; Math! 🏃</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Geek Life</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>博客搭建</tag>
+        <tag>备忘录</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>考研408：操作系统</title>
     <url>/2026/02/14/408-OS/</url>
     <content><![CDATA[<h1 id="操作系统"><a class="markdownIt-Anchor" href="#操作系统"></a> 操作系统</h1>
@@ -76,26 +151,224 @@
 ]]></content>
   </entry>
   <entry>
-    <title>考研408：计算机网络</title>
-    <url>/2026/02/14/408-%E8%AE%A1%E7%BD%91/</url>
-    <content><![CDATA[<h1 id="计算机网络"><a class="markdownIt-Anchor" href="#计算机网络"></a> 计算机网络</h1>
+    <title>考研数学：概率论与数理统计</title>
+    <url>/2026/02/14/%E6%95%B0%E4%B8%80-%E6%A6%82%E7%8E%87%E8%AE%BA/</url>
+    <content><![CDATA[<h1 id="概率论"><a class="markdownIt-Anchor" href="#概率论"></a> 概率论</h1>
 <p><strong>待更新列表：</strong></p>
 <ul>
 <li></li>
 </ul>
 ]]></content>
       <categories>
-        <category>408</category>
-        <category>计网</category>
+        <category>数一</category>
+        <category>概率论</category>
       </categories>
       <tags>
-        <tag>408</tag>
-        <tag>计网</tag>
+        <tag>考研数学</tag>
+        <tag>概率论</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>考研数学：高等数学</title>
+    <url>/2026/02/14/%E6%95%B0%E4%B8%80-%E9%AB%98%E6%95%B0/</url>
+    <content><![CDATA[<h1 id="高等数学"><a class="markdownIt-Anchor" href="#高等数学"></a> 高等数学</h1>
+<p><strong>待更新列表：</strong></p>
+<ul>
+<li></li>
+</ul>
+]]></content>
+      <categories>
+        <category>数一</category>
+        <category>高数</category>
+      </categories>
+      <tags>
+        <tag>考研数学</tag>
+        <tag>高数</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>考研数学：线性代数</title>
+    <url>/2026/02/14/%E6%95%B0%E4%B8%80-%E7%BA%BF%E4%BB%A3/</url>
+    <content><![CDATA[<h1 id="线性代数"><a class="markdownIt-Anchor" href="#线性代数"></a> 线性代数</h1>
+<p><strong>待更新列表：</strong></p>
+<ul>
+<li></li>
+</ul>
+]]></content>
+      <categories>
+        <category>数一</category>
+        <category>线代</category>
+      </categories>
+      <tags>
+        <tag>考研数学</tag>
+        <tag>线代</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>操作系统慕课版课后习题</title>
+    <url>/2026/02/16/%E6%9C%9F%E6%9C%AB-OS%E4%B9%A0%E9%A2%98/</url>
+    <content><![CDATA[<p>整理了慕课版教材章节重点习题（部分内容出现历年试卷中）。</p>
+<h3 id="笔记阅读与下载"><a class="markdownIt-Anchor" href="#笔记阅读与下载"></a> 📄 笔记阅读与下载</h3>
+<blockquote>
+<p>本文档已由自动流水线完成云端同步与水印压制。配套开源项目见：<a href="https://github.com/anyunyeyi/AUST-Blockchain-Survival-Guide">安理区块链期末生存指南</a></p>
+</blockquote>
+<p>👉 <a href="/pdf/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%85%95%E8%AF%BE%E7%89%88%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98.pdf">点击此处下载完整版 PDF 到本地</a></p>
+<iframe src="/pdf/操作系统慕课版课后习题.pdf" width="100%" height="800px" style="border: 1px solid #eee; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"></iframe>
+]]></content>
+      <categories>
+        <category>期末指南</category>
+        <category>重点习题</category>
+      </categories>
+      <tags>
+        <tag>OS</tag>
+        <tag>复习</tag>
+        <tag>习题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>信息安全的数学基础复习笔记</title>
+    <url>/2026/02/16/%E6%9C%9F%E6%9C%AB-%E4%BF%A1%E5%AE%89%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p><strong>核心目录概览：</strong></p>
+<ul>
+<li>整数的可除性
+<ul>
+<li>广义欧几里得算法</li>
+<li>贝祖系数</li>
+<li>素因数分解求最大公因数，最小公倍数</li>
+</ul>
+</li>
+<li>同余
+<ul>
+<li>星期几问题</li>
+<li>欧拉函数</li>
+<li>欧拉小定理和费马小定理</li>
+<li>模重复平方算法</li>
+<li>剩余类，完全剩余系和简化剩余系</li>
+</ul>
+</li>
+<li>同余式
+<ul>
+<li>求解一次同余式</li>
+<li>中国剩余定理</li>
+<li>求解高次同余式及其提升</li>
+<li>求解素数模的同余式</li>
+<li>… (更多细节请下载 PDF 查看)</li>
+</ul>
+</li>
+</ul>
+<h3 id="笔记阅读与下载"><a class="markdownIt-Anchor" href="#笔记阅读与下载"></a> 📄 笔记阅读与下载</h3>
+<blockquote>
+<p>本文档已由自动流水线完成云端同步与水印压制。配套开源项目见：<a href="https://github.com/anyunyeyi/AUST-Blockchain-Survival-Guide">安理区块链期末生存指南</a></p>
+</blockquote>
+<p>👉 <a href="/pdf/%E4%BF%A1%E5%AE%89%E6%95%B0%E5%AD%A6%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.pdf">点击此处下载完整版 PDF 到本地</a></p>
+<iframe src="/pdf/信安数学复习笔记.pdf" width="100%" height="800px" style="border: 1px solid #eee; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"></iframe>
+]]></content>
+      <categories>
+        <category>期末指南</category>
+        <category>复习笔记</category>
+      </categories>
+      <tags>
+        <tag>期末</tag>
+        <tag>信安数学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>分布式系统复习笔记</title>
+    <url>/2026/02/16/%E6%9C%9F%E6%9C%AB-%E5%88%86%E5%B8%83%E5%BC%8F%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p><strong>核心目录概览：</strong></p>
+<ul>
+<li>章节复习
+<ul>
+<li>第1章 分布式架构</li>
+<li>第2章 分布式应用服务拆分</li>
+<li>第3章 分布式调用</li>
+<li>第4章 分布式协同</li>
+<li>第5章 分布式计算</li>
+<li>第6章 分布式存储</li>
+<li>第7章 分布式算法
+<ul>
+<li>基本概念</li>
+<li>Paxos共识协议</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>学习通作业
+<ul>
+<li>平时测验</li>
+<li>作业2</li>
+<li>作业3</li>
+<li>重修作业</li>
+<li>… (更多细节请下载 PDF 查看)</li>
+</ul>
+</li>
+</ul>
+<h3 id="笔记阅读与下载"><a class="markdownIt-Anchor" href="#笔记阅读与下载"></a> 📄 笔记阅读与下载</h3>
+<blockquote>
+<p>本文档已由自动流水线完成云端同步与水印压制。配套开源项目见：<a href="https://github.com/anyunyeyi/AUST-Blockchain-Survival-Guide">安理区块链期末生存指南</a></p>
+</blockquote>
+<p>👉 <a href="/pdf/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.pdf">点击此处下载完整版 PDF 到本地</a></p>
+<iframe src="/pdf/分布式系统复习笔记.pdf" width="100%" height="800px" style="border: 1px solid #eee; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"></iframe>
+]]></content>
+      <categories>
+        <category>期末指南</category>
+        <category>复习笔记</category>
+      </categories>
+      <tags>
+        <tag>期末</tag>
+        <tag>分布式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>现代密码学复习笔记</title>
+    <url>/2026/02/16/%E6%9C%9F%E6%9C%AB-%E5%AF%86%E7%A0%81%E5%AD%A6%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p><strong>核心目录概览：</strong></p>
+<ul>
+<li>章节复习
+<ul>
+<li>第1章 密码学概论</li>
+<li>第2章 密码学基础</li>
+<li>第3章 古典密码体制</li>
+<li>第4章 分组密码</li>
+<li>第5章 序列密码</li>
+<li>第6章 Hash函数和消息认证</li>
+<li>第7章 公钥密码体制</li>
+<li>第8章 数字签名技术</li>
+<li>第10章 密钥管理</li>
+</ul>
+</li>
+<li>学习通作业
+<ul>
+<li>第1章
+<ul>
+<li>填空题</li>
+<li>论述题</li>
+<li>计算题</li>
+</ul>
+</li>
+<li>… (更多细节请下载 PDF 查看)</li>
+</ul>
+</li>
+</ul>
+<h3 id="笔记阅读与下载"><a class="markdownIt-Anchor" href="#笔记阅读与下载"></a> 📄 笔记阅读与下载</h3>
+<blockquote>
+<p>本文档已由自动流水线完成云端同步与水印压制。配套开源项目见：<a href="https://github.com/anyunyeyi/AUST-Blockchain-Survival-Guide">安理区块链期末生存指南</a></p>
+</blockquote>
+<p>👉 <a href="/pdf/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.pdf">点击此处下载完整版 PDF 到本地</a></p>
+<iframe src="/pdf/密码学复习笔记.pdf" width="100%" height="800px" style="border: 1px solid #eee; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"></iframe>
+]]></content>
+      <categories>
+        <category>期末指南</category>
+        <category>复习笔记</category>
+      </categories>
+      <tags>
+        <tag>期末</tag>
+        <tag>密码学</tag>
       </tags>
   </entry>
   <entry>
     <title>安徽理工大学 2023--2024 (2) 信息安全的数学基础</title>
-    <url>/2026/02/16/%E4%BF%A1%E5%AE%89%E6%95%B0%E5%AD%A624%E8%AF%95%E5%8D%B7/</url>
+    <url>/2026/02/16/%E8%AF%95%E5%8D%B7-%E4%BF%A1%E5%AE%89%E6%95%B0%E5%AD%A624/</url>
     <content><![CDATA[<h2 id="试卷概览"><a class="markdownIt-Anchor" href="#试卷概览"></a> 试卷概览</h2>
 <p><strong>安徽理工大学</strong> <strong>2023–2024（2）信息安全的数学基础</strong></p>
 <p>试卷重排：<strong><strong><strong><strong>anyunyeyi</strong></strong></strong></strong></p>
@@ -235,279 +508,6 @@
         <tag>复习</tag>
         <tag>信安数学</tag>
         <tag>真题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo博客日常更新指南与备忘录</title>
-    <url>/2026/02/15/geek-hexo/</url>
-    <content><![CDATA[<h1 id="hexo-博客更新标准化流程"><a class="markdownIt-Anchor" href="#hexo-博客更新标准化流程"></a> 🚀 Hexo 博客更新标准化流程</h1>
-<p>随着博客全面转向计算机基础 (408) 和考研数学一的记录，后续会有大量带有代码块和复杂公式的笔记产出。为了避免每次更新都要靠记忆去回忆命令行，特在此沉淀一份标准的 Hexo 博客更新流程，作为自己的“第二大脑”备忘录。</p>
-<hr />
-<h2 id="️-第一步新建文章-create"><a class="markdownIt-Anchor" href="#️-第一步新建文章-create"></a> 🛠️ 第一步：新建文章 (Create)</h2>
-<p>不要手动新建 <code>.md</code> 文件！手动新建会导致时间戳缺失或格式错误。</p>
-<ol>
-<li>打开 VS Code，调出终端（确保是 PowerShell 环境），进入博客根目录 <code>D:\myblog</code>。</li>
-<li>运行新建命令：<br />
-<code>hexo new &quot;你的文章标题&quot;</code></li>
-<li>执行后，Hexo 会自动在 <code>source/_posts/</code> 目录下生成一个同名的 Markdown 文件，并且自动填充好当前的精准时间。</li>
-</ol>
-<hr />
-<h2 id="第二步完善文章头部信息-front-matter"><a class="markdownIt-Anchor" href="#第二步完善文章头部信息-front-matter"></a> 📝 第二步：完善文章头部信息 (Front-matter)</h2>
-<p>打开刚刚生成的文件，最上方的 <code>---</code> 包围区域是文章的元数据。需要在此处配置好分类（Categories）和标签（Tags），以便自动归档到左侧边栏。</p>
-<p>标准格式参考：<br />
-<code>categories:</code> 下方使用 <code>- [主分类, 子分类]</code> 的格式配置多级分类。<br />
-<code>tags:</code> 下方使用 <code>- 标签名</code> 的格式配置多个标签。</p>
-<hr />
-<h2 id="第三步本地预览-preview"><a class="markdownIt-Anchor" href="#第三步本地预览-preview"></a> 🔍 第三步：本地预览 (Preview)</h2>
-<p>在把文章推送到外网之前，先在本地看看排版效果（特别是 C++ 代码高亮和 LaTeX 数学公式是否正常渲染）。</p>
-<p>在终端输入：<br />
-<code>hexo server</code></p>
-<p>运行后，在浏览器中打开 <code>http://localhost:4000</code> 即可实时预览。修改 Markdown 文件并保存后，网页会自动刷新。确认无误后，在终端按 <code>Ctrl + C</code> 退出预览模式。</p>
-<hr />
-<h2 id="第四步一键生成与部署-deploy"><a class="markdownIt-Anchor" href="#第四步一键生成与部署-deploy"></a> 🚀 第四步：一键生成与部署 (Deploy)</h2>
-<p>由于使用的是 Windows PowerShell，不支持传统的 <code>&amp;&amp;</code> 连接符，统一使用分号 <code>;</code> 来串联命令。</p>
-<p><strong>专属一键部署指令：</strong><br />
-<code>hexo clean; hexo g -d</code></p>
-<p><strong>指令拆解说明：</strong></p>
-<ul>
-<li><code>hexo clean</code>：清除本地缓存。</li>
-<li><code>hexo g -d</code>：生成静态网页文件并立即自动部署到 GitHub。</li>
-</ul>
-<hr />
-<h2 id="常见踩坑记录"><a class="markdownIt-Anchor" href="#常见踩坑记录"></a> 💡 常见踩坑记录</h2>
-<ol>
-<li><strong>首页 <a href="http://README.md">README.md</a> 丢失问题</strong>：<br />
-如果配置了 GitHub 仓库的主页介绍（<code>README.md</code>），一定要把该文件放在本地博客的 <code>source</code> 文件夹下，并在 <code>_config.yml</code> 中设置 <code>skip_render: README.md</code>。否则每次 <code>hexo d</code> 都会把它覆盖或转化成网页。</li>
-<li><strong>时间戳报错</strong>：<br />
-如果手动创建了文件，记得把头部的 <code>date</code> 修改为具体的标准时间（如 <code>2026-02-15 12:00:00</code>），否则 Hexo 编译会报错。</li>
-</ol>
-<blockquote>
-<p>保持输出，拒绝机械抄书。Focus on 408 &amp; Math! 🏃</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Geek Life</category>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>博客搭建</tag>
-        <tag>备忘录</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>考研数学：概率论与数理统计</title>
-    <url>/2026/02/14/%E6%95%B0%E4%B8%80-%E6%A6%82%E7%8E%87%E8%AE%BA/</url>
-    <content><![CDATA[<h1 id="概率论"><a class="markdownIt-Anchor" href="#概率论"></a> 概率论</h1>
-<p><strong>待更新列表：</strong></p>
-<ul>
-<li></li>
-</ul>
-]]></content>
-      <categories>
-        <category>数一</category>
-        <category>概率论</category>
-      </categories>
-      <tags>
-        <tag>考研数学</tag>
-        <tag>概率论</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>考研数学：线性代数</title>
-    <url>/2026/02/14/%E6%95%B0%E4%B8%80-%E7%BA%BF%E4%BB%A3/</url>
-    <content><![CDATA[<h1 id="线性代数"><a class="markdownIt-Anchor" href="#线性代数"></a> 线性代数</h1>
-<p><strong>待更新列表：</strong></p>
-<ul>
-<li></li>
-</ul>
-]]></content>
-      <categories>
-        <category>数一</category>
-        <category>线代</category>
-      </categories>
-      <tags>
-        <tag>考研数学</tag>
-        <tag>线代</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>操作系统慕课版课后习题</title>
-    <url>/2026/02/16/%E6%9C%9F%E6%9C%AB-OS%E4%B9%A0%E9%A2%98/</url>
-    <content><![CDATA[<p>整理了慕课版教材章节重点习题（部分内容出现历年试卷中）。</p>
-<h3 id="笔记阅读与下载"><a class="markdownIt-Anchor" href="#笔记阅读与下载"></a> 📄 笔记阅读与下载</h3>
-<blockquote>
-<p>本文档已由自动流水线完成云端同步与水印压制。配套开源项目见：<a href="https://github.com/anyunyeyi/AUST-Blockchain-Survival-Guide">安理区块链期末生存指南</a></p>
-</blockquote>
-<p>👉 <a href="/pdf/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%85%95%E8%AF%BE%E7%89%88%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98.pdf">点击此处下载完整版 PDF 到本地</a></p>
-<iframe src="/pdf/操作系统慕课版课后习题.pdf" width="100%" height="800px" style="border: 1px solid #eee; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"></iframe>
-]]></content>
-      <categories>
-        <category>期末指南</category>
-        <category>重点习题</category>
-      </categories>
-      <tags>
-        <tag>OS</tag>
-        <tag>复习</tag>
-        <tag>习题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>考研数学：高等数学</title>
-    <url>/2026/02/14/%E6%95%B0%E4%B8%80-%E9%AB%98%E6%95%B0/</url>
-    <content><![CDATA[<h1 id="高等数学"><a class="markdownIt-Anchor" href="#高等数学"></a> 高等数学</h1>
-<p><strong>待更新列表：</strong></p>
-<ul>
-<li></li>
-</ul>
-]]></content>
-      <categories>
-        <category>数一</category>
-        <category>高数</category>
-      </categories>
-      <tags>
-        <tag>考研数学</tag>
-        <tag>高数</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>信息安全的数学基础复习笔记</title>
-    <url>/2026/02/16/%E6%9C%9F%E6%9C%AB-%E4%BF%A1%E5%AE%89%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p><strong>核心目录概览：</strong></p>
-<ul>
-<li>整数的可除性
-<ul>
-<li>广义欧几里得算法</li>
-<li>贝祖系数</li>
-<li>素因数分解求最大公因数，最小公倍数</li>
-</ul>
-</li>
-<li>同余
-<ul>
-<li>星期几问题</li>
-<li>欧拉函数</li>
-<li>欧拉小定理和费马小定理</li>
-<li>模重复平方算法</li>
-<li>剩余类，完全剩余系和简化剩余系</li>
-</ul>
-</li>
-<li>同余式
-<ul>
-<li>求解一次同余式</li>
-<li>中国剩余定理</li>
-<li>求解高次同余式及其提升</li>
-<li>求解素数模的同余式</li>
-<li>… (更多细节请下载 PDF 查看)</li>
-</ul>
-</li>
-</ul>
-<h3 id="笔记阅读与下载"><a class="markdownIt-Anchor" href="#笔记阅读与下载"></a> 📄 笔记阅读与下载</h3>
-<blockquote>
-<p>本文档已由自动流水线完成云端同步与水印压制。配套开源项目见：<a href="https://github.com/anyunyeyi/AUST-Blockchain-Survival-Guide">安理区块链期末生存指南</a></p>
-</blockquote>
-<p>👉 <a href="/pdf/%E4%BF%A1%E5%AE%89%E6%95%B0%E5%AD%A6%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.pdf">点击此处下载完整版 PDF 到本地</a></p>
-<iframe src="/pdf/信安数学复习笔记.pdf" width="100%" height="800px" style="border: 1px solid #eee; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"></iframe>
-]]></content>
-      <categories>
-        <category>期末指南</category>
-        <category>复习笔记</category>
-      </categories>
-      <tags>
-        <tag>信安数学</tag>
-        <tag>期末</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>分布式系统复习笔记</title>
-    <url>/2026/02/16/%E6%9C%9F%E6%9C%AB-%E5%88%86%E5%B8%83%E5%BC%8F%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p><strong>核心目录概览：</strong></p>
-<ul>
-<li>章节复习
-<ul>
-<li>第1章 分布式架构</li>
-<li>第2章 分布式应用服务拆分</li>
-<li>第3章 分布式调用</li>
-<li>第4章 分布式协同</li>
-<li>第5章 分布式计算</li>
-<li>第6章 分布式存储</li>
-<li>第7章 分布式算法
-<ul>
-<li>基本概念</li>
-<li>Paxos共识协议</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>学习通作业
-<ul>
-<li>平时测验</li>
-<li>作业2</li>
-<li>作业3</li>
-<li>重修作业</li>
-<li>… (更多细节请下载 PDF 查看)</li>
-</ul>
-</li>
-</ul>
-<h3 id="笔记阅读与下载"><a class="markdownIt-Anchor" href="#笔记阅读与下载"></a> 📄 笔记阅读与下载</h3>
-<blockquote>
-<p>本文档已由自动流水线完成云端同步与水印压制。配套开源项目见：<a href="https://github.com/anyunyeyi/AUST-Blockchain-Survival-Guide">安理区块链期末生存指南</a></p>
-</blockquote>
-<p>👉 <a href="/pdf/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.pdf">点击此处下载完整版 PDF 到本地</a></p>
-<iframe src="/pdf/分布式系统复习笔记.pdf" width="100%" height="800px" style="border: 1px solid #eee; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"></iframe>
-]]></content>
-      <categories>
-        <category>期末指南</category>
-        <category>复习笔记</category>
-      </categories>
-      <tags>
-        <tag>期末</tag>
-        <tag>分布式</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>现代密码学复习笔记</title>
-    <url>/2026/02/16/%E6%9C%9F%E6%9C%AB-%E5%AF%86%E7%A0%81%E5%AD%A6%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p><strong>核心目录概览：</strong></p>
-<ul>
-<li>章节复习
-<ul>
-<li>第1章 密码学概论</li>
-<li>第2章 密码学基础</li>
-<li>第3章 古典密码体制</li>
-<li>第4章 分组密码</li>
-<li>第5章 序列密码</li>
-<li>第6章 Hash函数和消息认证</li>
-<li>第7章 公钥密码体制</li>
-<li>第8章 数字签名技术</li>
-<li>第10章 密钥管理</li>
-</ul>
-</li>
-<li>学习通作业
-<ul>
-<li>第1章
-<ul>
-<li>填空题</li>
-<li>论述题</li>
-<li>计算题</li>
-</ul>
-</li>
-<li>… (更多细节请下载 PDF 查看)</li>
-</ul>
-</li>
-</ul>
-<h3 id="笔记阅读与下载"><a class="markdownIt-Anchor" href="#笔记阅读与下载"></a> 📄 笔记阅读与下载</h3>
-<blockquote>
-<p>本文档已由自动流水线完成云端同步与水印压制。配套开源项目见：<a href="https://github.com/anyunyeyi/AUST-Blockchain-Survival-Guide">安理区块链期末生存指南</a></p>
-</blockquote>
-<p>👉 <a href="/pdf/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.pdf">点击此处下载完整版 PDF 到本地</a></p>
-<iframe src="/pdf/密码学复习笔记.pdf" width="100%" height="800px" style="border: 1px solid #eee; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"></iframe>
-]]></content>
-      <categories>
-        <category>期末指南</category>
-        <category>复习笔记</category>
-      </categories>
-      <tags>
-        <tag>期末</tag>
-        <tag>密码学</tag>
       </tags>
   </entry>
 </search>
