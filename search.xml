@@ -1,26 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>考研408：数据结构</title>
-    <url>/2026/02/14/408-DS/</url>
-    <content><![CDATA[<h1 id="数据结构"><a class="markdownIt-Anchor" href="#数据结构"></a> 数据结构</h1>
-<p><strong>待更新列表：</strong></p>
-<ul>
-<li></li>
-</ul>
-]]></content>
-      <categories>
-        <category>408</category>
-        <category>DS</category>
-      </categories>
-      <tags>
-        <tag>DS</tag>
-        <tag>408</tag>
-        <tag>算法</tag>
-        <tag>C</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>考研408：操作系统</title>
     <url>/2026/02/14/408-OS/</url>
     <content><![CDATA[<h1 id="操作系统"><a class="markdownIt-Anchor" href="#操作系统"></a> 操作系统</h1>
@@ -36,6 +16,62 @@
       <tags>
         <tag>408</tag>
         <tag>OS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>考研408：数据结构</title>
+    <url>/2026/02/14/408-DS/</url>
+    <content><![CDATA[<h1 id="数据结构"><a class="markdownIt-Anchor" href="#数据结构"></a> 数据结构</h1>
+<p><strong>待更新列表：</strong></p>
+<ul>
+<li></li>
+</ul>
+]]></content>
+      <categories>
+        <category>408</category>
+        <category>DS</category>
+      </categories>
+      <tags>
+        <tag>408</tag>
+        <tag>DS</tag>
+        <tag>算法</tag>
+        <tag>C</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>考研408：计算机组成原理</title>
+    <url>/2026/02/14/408-%E8%AE%A1%E7%BB%84/</url>
+    <content><![CDATA[<h1 id="计算机组成原理"><a class="markdownIt-Anchor" href="#计算机组成原理"></a> 计算机组成原理</h1>
+<p><strong>待更新列表：</strong></p>
+<ul>
+<li></li>
+</ul>
+]]></content>
+      <categories>
+        <category>408</category>
+        <category>计组</category>
+      </categories>
+      <tags>
+        <tag>408</tag>
+        <tag>计组</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>考研408：计算机网络</title>
+    <url>/2026/02/14/408-%E8%AE%A1%E7%BD%91/</url>
+    <content><![CDATA[<h1 id="计算机网络"><a class="markdownIt-Anchor" href="#计算机网络"></a> 计算机网络</h1>
+<p><strong>待更新列表：</strong></p>
+<ul>
+<li></li>
+</ul>
+]]></content>
+      <categories>
+        <category>408</category>
+        <category>计网</category>
+      </categories>
+      <tags>
+        <tag>408</tag>
+        <tag>计网</tag>
       </tags>
   </entry>
   <entry>
@@ -115,21 +151,39 @@
 ]]></content>
   </entry>
   <entry>
-    <title>考研408：计算机组成原理</title>
-    <url>/2026/02/14/408-%E8%AE%A1%E7%BB%84/</url>
-    <content><![CDATA[<h1 id="计算机组成原理"><a class="markdownIt-Anchor" href="#计算机组成原理"></a> 计算机组成原理</h1>
+    <title>考研数学：线性代数</title>
+    <url>/2026/02/14/%E6%95%B0%E4%B8%80-%E7%BA%BF%E4%BB%A3/</url>
+    <content><![CDATA[<h1 id="线性代数"><a class="markdownIt-Anchor" href="#线性代数"></a> 线性代数</h1>
 <p><strong>待更新列表：</strong></p>
 <ul>
 <li></li>
 </ul>
 ]]></content>
       <categories>
-        <category>408</category>
-        <category>计组</category>
+        <category>数一</category>
+        <category>线代</category>
       </categories>
       <tags>
-        <tag>408</tag>
-        <tag>计组</tag>
+        <tag>考研数学</tag>
+        <tag>线代</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>考研数学：概率论与数理统计</title>
+    <url>/2026/02/14/%E6%95%B0%E4%B8%80-%E6%A6%82%E7%8E%87%E8%AE%BA/</url>
+    <content><![CDATA[<h1 id="概率论"><a class="markdownIt-Anchor" href="#概率论"></a> 概率论</h1>
+<p><strong>待更新列表：</strong></p>
+<ul>
+<li></li>
+</ul>
+]]></content>
+      <categories>
+        <category>数一</category>
+        <category>概率论</category>
+      </categories>
+      <tags>
+        <tag>考研数学</tag>
+        <tag>概率论</tag>
       </tags>
   </entry>
   <entry>
@@ -171,66 +225,11 @@
 <iframe src="/pdf/更新测试_2.pdf" width="100%" height="800px" style="border: 1px solid #eee; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"></iframe>
 ]]></content>
       <categories>
-        <category>期末</category>
-        <category>笔记</category>
+        <category>期末指南</category>
       </categories>
       <tags>
         <tag>期末</tag>
         <tag>信安数学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>考研数学：线性代数</title>
-    <url>/2026/02/14/%E6%95%B0%E4%B8%80-%E7%BA%BF%E4%BB%A3/</url>
-    <content><![CDATA[<h1 id="线性代数"><a class="markdownIt-Anchor" href="#线性代数"></a> 线性代数</h1>
-<p><strong>待更新列表：</strong></p>
-<ul>
-<li></li>
-</ul>
-]]></content>
-      <categories>
-        <category>数一</category>
-        <category>线代</category>
-      </categories>
-      <tags>
-        <tag>考研数学</tag>
-        <tag>线代</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>考研408：计算机网络</title>
-    <url>/2026/02/14/408-%E8%AE%A1%E7%BD%91/</url>
-    <content><![CDATA[<h1 id="计算机网络"><a class="markdownIt-Anchor" href="#计算机网络"></a> 计算机网络</h1>
-<p><strong>待更新列表：</strong></p>
-<ul>
-<li></li>
-</ul>
-]]></content>
-      <categories>
-        <category>408</category>
-        <category>计网</category>
-      </categories>
-      <tags>
-        <tag>408</tag>
-        <tag>计网</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>考研数学：概率论与数理统计</title>
-    <url>/2026/02/14/%E6%95%B0%E4%B8%80-%E6%A6%82%E7%8E%87%E8%AE%BA/</url>
-    <content><![CDATA[<h1 id="概率论"><a class="markdownIt-Anchor" href="#概率论"></a> 概率论</h1>
-<p><strong>待更新列表：</strong></p>
-<ul>
-<li></li>
-</ul>
-]]></content>
-      <categories>
-        <category>数一</category>
-        <category>概率论</category>
-      </categories>
-      <tags>
-        <tag>考研数学</tag>
-        <tag>概率论</tag>
       </tags>
   </entry>
   <entry>
