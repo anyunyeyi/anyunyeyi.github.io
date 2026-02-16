@@ -20,28 +20,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js" defer></script>
 
-    <meta name="description" content="核心目录概览：  章节复习  第1章 分布式架构 第2章 分布式应用服务拆分 第3章 分布式调用 第4章 分布式协同 第5章 分布式计算 第6章 分布式存储 第7章 分布式算法  基本概念 Paxos共识协议     学习通作业  平时测验 作业2 作业3 重修作业 … (更多细节请下载 PDF 查看)     📄 笔记阅读与下载  本文档已由自动流水线完成云端同步与水印压制。配套开源项目见：安">
+    <meta name="description" content="核心目录概览：  整数的可除性  广义欧几里得算法 贝祖系数 素因数分解求最大公因数，最小公倍数   同余  星期几问题 欧拉函数 欧拉小定理和费马小定理 模重复平方算法 剩余类，完全剩余系和简化剩余系   同余式  求解一次同余式 中国剩余定理 求解高次同余式及其提升 求解素数模的同余式 … (更多细节请下载 PDF 查看)     📄 笔记阅读与下载  本文档已由自动流水线完成云端同步与水印">
 <meta property="og:type" content="article">
-<meta property="og:title" content="分布式系统复习笔记">
-<meta property="og:url" content="http://example.com/2026/02/16/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:title" content="信息安全的数学基础复习笔记">
+<meta property="og:url" content="http://example.com/2026/02/16/%E6%9C%9F%E6%9C%AB-%E4%BF%A1%E5%AE%89%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="CS &amp; Math | anyunyeyi">
-<meta property="og:description" content="核心目录概览：  章节复习  第1章 分布式架构 第2章 分布式应用服务拆分 第3章 分布式调用 第4章 分布式协同 第5章 分布式计算 第6章 分布式存储 第7章 分布式算法  基本概念 Paxos共识协议     学习通作业  平时测验 作业2 作业3 重修作业 … (更多细节请下载 PDF 查看)     📄 笔记阅读与下载  本文档已由自动流水线完成云端同步与水印压制。配套开源项目见：安">
+<meta property="og:description" content="核心目录概览：  整数的可除性  广义欧几里得算法 贝祖系数 素因数分解求最大公因数，最小公倍数   同余  星期几问题 欧拉函数 欧拉小定理和费马小定理 模重复平方算法 剩余类，完全剩余系和简化剩余系   同余式  求解一次同余式 中国剩余定理 求解高次同余式及其提升 求解素数模的同余式 … (更多细节请下载 PDF 查看)     📄 笔记阅读与下载  本文档已由自动流水线完成云端同步与水印">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-02-16T10:53:28.000Z">
-<meta property="article:modified_time" content="2026-02-16T10:53:28.000Z">
+<meta property="article:published_time" content="2026-02-16T10:40:18.000Z">
+<meta property="article:modified_time" content="2026-02-16T10:40:18.000Z">
 <meta property="article:author" content="anyunyeyi">
-<meta property="article:tag" content="分布式">
+<meta property="article:tag" content="信安数学">
 <meta property="article:tag" content="期末">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/2026/02/16/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+<link rel="canonical" href="http://example.com/2026/02/16/%E6%9C%9F%E6%9C%AB-%E4%BF%A1%E5%AE%89%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2026/02/16/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/","path":"2026/02/16/分布式系统复习笔记/","title":"分布式系统复习笔记"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2026/02/16/%E6%9C%9F%E6%9C%AB-%E4%BF%A1%E5%AE%89%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/","path":"2026/02/16/期末-信安数学笔记/","title":"信息安全的数学基础复习笔记"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>分布式系统复习笔记 | CS & Math | anyunyeyi</title>
+<title>信息安全的数学基础复习笔记 | CS & Math | anyunyeyi</title>
   
 
 
@@ -198,6 +198,14 @@
       </div>
   </nav>
 </div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/anyunyeyi" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;anyunyeyi" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/about/" title="WeChat → &#x2F;about&#x2F;" rel="noopener me"><i class="fab fa-weixin fa-fw"></i>WeChat</a>
+      </span>
+  </div>
 
         </div>
       </div>
@@ -220,7 +228,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2026/02/16/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2026/02/16/%E6%9C%9F%E6%9C%AB-%E4%BF%A1%E5%AE%89%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -233,12 +241,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="分布式系统复习笔记 | CS & Math | anyunyeyi">
+      <meta itemprop="name" content="信息安全的数学基础复习笔记 | CS & Math | anyunyeyi">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          分布式系统复习笔记
+          信息安全的数学基础复习笔记
         </h1>
 
         <div class="post-meta-container">
@@ -249,7 +257,7 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2026-02-16 18:53:28" itemprop="dateCreated datePublished" datetime="2026-02-16T18:53:28+08:00">2026-02-16</time>
+      <time title="创建时间：2026-02-16 18:40:18" itemprop="dateCreated datePublished" datetime="2026-02-16T18:40:18+08:00">2026-02-16</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -276,28 +284,28 @@
     
     <div class="post-body" itemprop="articleBody"><p><strong>核心目录概览：</strong></p>
 <ul>
-<li>章节复习
+<li>整数的可除性
 <ul>
-<li>第1章 分布式架构</li>
-<li>第2章 分布式应用服务拆分</li>
-<li>第3章 分布式调用</li>
-<li>第4章 分布式协同</li>
-<li>第5章 分布式计算</li>
-<li>第6章 分布式存储</li>
-<li>第7章 分布式算法
-<ul>
-<li>基本概念</li>
-<li>Paxos共识协议</li>
+<li>广义欧几里得算法</li>
+<li>贝祖系数</li>
+<li>素因数分解求最大公因数，最小公倍数</li>
 </ul>
 </li>
+<li>同余
+<ul>
+<li>星期几问题</li>
+<li>欧拉函数</li>
+<li>欧拉小定理和费马小定理</li>
+<li>模重复平方算法</li>
+<li>剩余类，完全剩余系和简化剩余系</li>
 </ul>
 </li>
-<li>学习通作业
+<li>同余式
 <ul>
-<li>平时测验</li>
-<li>作业2</li>
-<li>作业3</li>
-<li>重修作业</li>
+<li>求解一次同余式</li>
+<li>中国剩余定理</li>
+<li>求解高次同余式及其提升</li>
+<li>求解素数模的同余式</li>
 <li>… (更多细节请下载 PDF 查看)</li>
 </ul>
 </li>
@@ -306,8 +314,8 @@
 <blockquote>
 <p>本文档已由自动流水线完成云端同步与水印压制。配套开源项目见：<a target="_blank" rel="noopener" href="https://github.com/anyunyeyi/AUST-Blockchain-Survival-Guide">安理区块链期末生存指南</a></p>
 </blockquote>
-<p>👉 <a href="/pdf/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.pdf">点击此处下载完整版 PDF 到本地</a></p>
-<iframe src="/pdf/分布式系统复习笔记.pdf" width="100%" height="800px" style="border: 1px solid #eee; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"></iframe>
+<p>👉 <a href="/pdf/%E4%BF%A1%E5%AE%89%E6%95%B0%E5%AD%A6%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.pdf">点击此处下载完整版 PDF 到本地</a></p>
+<iframe src="/pdf/信安数学复习笔记.pdf" width="100%" height="800px" style="border: 1px solid #eee; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"></iframe>
 
     </div>
 
@@ -318,18 +326,21 @@
     <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/%E6%9C%9F%E6%9C%AB/" rel="tag"># 期末</a>
-              <a href="/tags/%E5%88%86%E5%B8%83%E5%BC%8F/" rel="tag"># 分布式</a>
+              <a href="/tags/%E4%BF%A1%E5%AE%89%E6%95%B0%E5%AD%A6/" rel="tag"># 信安数学</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2026/02/16/%E7%8E%B0%E4%BB%A3%E5%AF%86%E7%A0%81%E5%AD%A6%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="prev" title="现代密码学复习笔记">
-                  <i class="fa fa-angle-left"></i> 现代密码学复习笔记
+                <a href="/2026/02/15/geek-hexo/" rel="prev" title="Hexo博客日常更新指南与备忘录">
+                  <i class="fa fa-angle-left"></i> Hexo博客日常更新指南与备忘录
                 </a>
             </div>
             <div class="post-nav-item">
+                <a href="/2026/02/16/%E6%9C%9F%E6%9C%AB-%E5%AF%86%E7%A0%81%E5%AD%A6%E7%AC%94%E8%AE%B0/" rel="next" title="现代密码学复习笔记">
+                  现代密码学复习笔记 <i class="fa fa-angle-right"></i>
+                </a>
             </div>
           </div>
     </footer>

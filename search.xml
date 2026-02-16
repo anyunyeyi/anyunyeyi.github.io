@@ -1,26 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>考研408：数据结构</title>
-    <url>/2026/02/14/408-DS/</url>
-    <content><![CDATA[<h1 id="数据结构"><a class="markdownIt-Anchor" href="#数据结构"></a> 数据结构</h1>
-<p><strong>待更新列表：</strong></p>
-<ul>
-<li></li>
-</ul>
-]]></content>
-      <categories>
-        <category>408</category>
-        <category>DS</category>
-      </categories>
-      <tags>
-        <tag>DS</tag>
-        <tag>408</tag>
-        <tag>算法</tag>
-        <tag>C</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>考研408：操作系统</title>
     <url>/2026/02/14/408-OS/</url>
     <content><![CDATA[<h1 id="操作系统"><a class="markdownIt-Anchor" href="#操作系统"></a> 操作系统</h1>
@@ -57,42 +37,6 @@
       </tags>
   </entry>
   <entry>
-    <title>考研408：计算机网络</title>
-    <url>/2026/02/14/408-%E8%AE%A1%E7%BD%91/</url>
-    <content><![CDATA[<h1 id="计算机网络"><a class="markdownIt-Anchor" href="#计算机网络"></a> 计算机网络</h1>
-<p><strong>待更新列表：</strong></p>
-<ul>
-<li></li>
-</ul>
-]]></content>
-      <categories>
-        <category>408</category>
-        <category>计网</category>
-      </categories>
-      <tags>
-        <tag>408</tag>
-        <tag>计网</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>考研数学：概率论与数理统计</title>
-    <url>/2026/02/14/%E6%95%B0%E4%B8%80-%E6%A6%82%E7%8E%87%E8%AE%BA/</url>
-    <content><![CDATA[<h1 id="概率论"><a class="markdownIt-Anchor" href="#概率论"></a> 概率论</h1>
-<p><strong>待更新列表：</strong></p>
-<ul>
-<li></li>
-</ul>
-]]></content>
-      <categories>
-        <category>数一</category>
-        <category>概率论</category>
-      </categories>
-      <tags>
-        <tag>考研数学</tag>
-        <tag>概率论</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2026/02/04/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -112,50 +56,23 @@
 ]]></content>
   </entry>
   <entry>
-    <title>信息安全的数学基础复习笔记</title>
-    <url>/2026/02/16/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p><strong>核心目录概览：</strong></p>
+    <title>考研408：数据结构</title>
+    <url>/2026/02/14/408-DS/</url>
+    <content><![CDATA[<h1 id="数据结构"><a class="markdownIt-Anchor" href="#数据结构"></a> 数据结构</h1>
+<p><strong>待更新列表：</strong></p>
 <ul>
-<li>整数的可除性
-<ul>
-<li>广义欧几里得算法</li>
-<li>贝祖系数</li>
-<li>素因数分解求最大公因数，最小公倍数</li>
+<li></li>
 </ul>
-</li>
-<li>同余
-<ul>
-<li>星期几问题</li>
-<li>欧拉函数</li>
-<li>欧拉小定理和费马小定理</li>
-<li>模重复平方算法</li>
-<li>剩余类，完全剩余系和简化剩余系</li>
-</ul>
-</li>
-<li>同余式
-<ul>
-<li>求解一次同余式</li>
-<li>中国剩余定理</li>
-<li>求解高次同余式及其提升</li>
-<li>求解素数模的同余式</li>
-<li>… (更多细节请下载 PDF 查看)</li>
-</ul>
-</li>
-</ul>
-<h3 id="笔记阅读与下载"><a class="markdownIt-Anchor" href="#笔记阅读与下载"></a> 📄 笔记阅读与下载</h3>
-<blockquote>
-<p>本文档已由自动流水线完成云端同步与水印压制。配套开源项目见：<a href="https://github.com/anyunyeyi/AUST-Blockchain-Survival-Guide">安理区块链期末生存指南</a></p>
-</blockquote>
-<p>👉 <a href="/pdf/%E4%BF%A1%E5%AE%89%E6%95%B0%E5%AD%A6%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.pdf">点击此处下载完整版 PDF 到本地</a></p>
-<iframe src="/pdf/信安数学复习笔记.pdf" width="100%" height="800px" style="border: 1px solid #eee; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"></iframe>
 ]]></content>
       <categories>
-        <category>期末指南</category>
-        <category>复习笔记</category>
+        <category>408</category>
+        <category>DS</category>
       </categories>
       <tags>
-        <tag>期末</tag>
-        <tag>信安数学</tag>
+        <tag>408</tag>
+        <tag>DS</tag>
+        <tag>算法</tag>
+        <tag>C</tag>
       </tags>
   </entry>
   <entry>
@@ -234,32 +151,50 @@
       </tags>
   </entry>
   <entry>
-    <title>现代密码学复习笔记</title>
-    <url>/2026/02/16/%E7%8E%B0%E4%BB%A3%E5%AF%86%E7%A0%81%E5%AD%A6%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <title>考研数学：概率论与数理统计</title>
+    <url>/2026/02/14/%E6%95%B0%E4%B8%80-%E6%A6%82%E7%8E%87%E8%AE%BA/</url>
+    <content><![CDATA[<h1 id="概率论"><a class="markdownIt-Anchor" href="#概率论"></a> 概率论</h1>
+<p><strong>待更新列表：</strong></p>
+<ul>
+<li></li>
+</ul>
+]]></content>
+      <categories>
+        <category>数一</category>
+        <category>概率论</category>
+      </categories>
+      <tags>
+        <tag>考研数学</tag>
+        <tag>概率论</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>信息安全的数学基础复习笔记</title>
+    <url>/2026/02/16/%E6%9C%9F%E6%9C%AB-%E4%BF%A1%E5%AE%89%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<p><strong>核心目录概览：</strong></p>
 <ul>
-<li>章节复习
+<li>整数的可除性
 <ul>
-<li>第1章 密码学概论</li>
-<li>第2章 密码学基础</li>
-<li>第3章 古典密码体制</li>
-<li>第4章 分组密码</li>
-<li>第5章 序列密码</li>
-<li>第6章 Hash函数和消息认证</li>
-<li>第7章 公钥密码体制</li>
-<li>第8章 数字签名技术</li>
-<li>第10章 密钥管理</li>
+<li>广义欧几里得算法</li>
+<li>贝祖系数</li>
+<li>素因数分解求最大公因数，最小公倍数</li>
 </ul>
 </li>
-<li>学习通作业
+<li>同余
 <ul>
-<li>第1章
-<ul>
-<li>填空题</li>
-<li>论述题</li>
-<li>计算题</li>
+<li>星期几问题</li>
+<li>欧拉函数</li>
+<li>欧拉小定理和费马小定理</li>
+<li>模重复平方算法</li>
+<li>剩余类，完全剩余系和简化剩余系</li>
 </ul>
 </li>
+<li>同余式
+<ul>
+<li>求解一次同余式</li>
+<li>中国剩余定理</li>
+<li>求解高次同余式及其提升</li>
+<li>求解素数模的同余式</li>
 <li>… (更多细节请下载 PDF 查看)</li>
 </ul>
 </li>
@@ -268,8 +203,8 @@
 <blockquote>
 <p>本文档已由自动流水线完成云端同步与水印压制。配套开源项目见：<a href="https://github.com/anyunyeyi/AUST-Blockchain-Survival-Guide">安理区块链期末生存指南</a></p>
 </blockquote>
-<p>👉 <a href="/pdf/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.pdf">点击此处下载完整版 PDF 到本地</a></p>
-<iframe src="/pdf/密码学复习笔记.pdf" width="100%" height="800px" style="border: 1px solid #eee; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"></iframe>
+<p>👉 <a href="/pdf/%E4%BF%A1%E5%AE%89%E6%95%B0%E5%AD%A6%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.pdf">点击此处下载完整版 PDF 到本地</a></p>
+<iframe src="/pdf/信安数学复习笔记.pdf" width="100%" height="800px" style="border: 1px solid #eee; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"></iframe>
 ]]></content>
       <categories>
         <category>期末指南</category>
@@ -277,7 +212,25 @@
       </categories>
       <tags>
         <tag>期末</tag>
-        <tag>密码学</tag>
+        <tag>信安数学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>考研408：计算机网络</title>
+    <url>/2026/02/14/408-%E8%AE%A1%E7%BD%91/</url>
+    <content><![CDATA[<h1 id="计算机网络"><a class="markdownIt-Anchor" href="#计算机网络"></a> 计算机网络</h1>
+<p><strong>待更新列表：</strong></p>
+<ul>
+<li></li>
+</ul>
+]]></content>
+      <categories>
+        <category>408</category>
+        <category>计网</category>
+      </categories>
+      <tags>
+        <tag>408</tag>
+        <tag>计网</tag>
       </tags>
   </entry>
   <entry>
@@ -300,7 +253,7 @@
   </entry>
   <entry>
     <title>分布式系统复习笔记</title>
-    <url>/2026/02/16/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <url>/2026/02/16/%E6%9C%9F%E6%9C%AB-%E5%88%86%E5%B8%83%E5%BC%8F%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<p><strong>核心目录概览：</strong></p>
 <ul>
 <li>章节复习
@@ -343,6 +296,53 @@
       <tags>
         <tag>期末</tag>
         <tag>分布式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>现代密码学复习笔记</title>
+    <url>/2026/02/16/%E6%9C%9F%E6%9C%AB-%E5%AF%86%E7%A0%81%E5%AD%A6%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p><strong>核心目录概览：</strong></p>
+<ul>
+<li>章节复习
+<ul>
+<li>第1章 密码学概论</li>
+<li>第2章 密码学基础</li>
+<li>第3章 古典密码体制</li>
+<li>第4章 分组密码</li>
+<li>第5章 序列密码</li>
+<li>第6章 Hash函数和消息认证</li>
+<li>第7章 公钥密码体制</li>
+<li>第8章 数字签名技术</li>
+<li>第10章 密钥管理</li>
+</ul>
+</li>
+<li>学习通作业
+<ul>
+<li>第1章
+<ul>
+<li>填空题</li>
+<li>论述题</li>
+<li>计算题</li>
+</ul>
+</li>
+<li>… (更多细节请下载 PDF 查看)</li>
+</ul>
+</li>
+</ul>
+<h3 id="笔记阅读与下载"><a class="markdownIt-Anchor" href="#笔记阅读与下载"></a> 📄 笔记阅读与下载</h3>
+<blockquote>
+<p>本文档已由自动流水线完成云端同步与水印压制。配套开源项目见：<a href="https://github.com/anyunyeyi/AUST-Blockchain-Survival-Guide">安理区块链期末生存指南</a></p>
+</blockquote>
+<p>👉 <a href="/pdf/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.pdf">点击此处下载完整版 PDF 到本地</a></p>
+<iframe src="/pdf/密码学复习笔记.pdf" width="100%" height="800px" style="border: 1px solid #eee; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"></iframe>
+]]></content>
+      <categories>
+        <category>期末指南</category>
+        <category>复习笔记</category>
+      </categories>
+      <tags>
+        <tag>期末</tag>
+        <tag>密码学</tag>
       </tags>
   </entry>
 </search>
