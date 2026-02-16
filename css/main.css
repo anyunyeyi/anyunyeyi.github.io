@@ -49,10 +49,10 @@
     --btn-default-hover-bg: #666;
     --btn-default-hover-color: #ccc;
     --btn-default-hover-border-color: #666;
-    --highlight-background: #1c1b1b;
-    --highlight-foreground: #fff;
-    --highlight-gutter-background: #323131;
-    --highlight-gutter-foreground: #e8e8e8;
+    --highlight-background: #303030;
+    --highlight-foreground: #ddd;
+    --highlight-gutter-background: #414141;
+    --highlight-gutter-foreground: #cbcbcb;
     color-scheme: dark;
   }
   img {
@@ -530,114 +530,59 @@ pre code.hljs {
 code.hljs {
   padding: 3px 5px
 }
-/*!
-  Theme: StackOverflow Dark
-  Description: Dark theme as used on stackoverflow.com
-  Author: stackoverflow.com
-  Maintainer: @Hirse
-  Website: https://github.com/StackExchange/Stacks
-  License: MIT
-  Updated: 2021-05-15
+/*
 
-  Updated for @stackoverflow/stacks v0.64.0
-  Code Blocks: /blob/v0.64.0/lib/css/components/_stacks-code-blocks.less
-  Colors: /blob/v0.64.0/lib/css/exports/_stacks-constants-colors.less
+Dark style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
+
 */
 .hljs {
-  /* var(--highlight-color) */
-  color: #ffffff;
-  /* var(--highlight-bg) */
-  background: #1c1b1b
-}
-.hljs-subst {
-  /* var(--highlight-color) */
-  color: #ffffff
-}
-.hljs-comment {
-  /* var(--highlight-comment) */
-  color: #999999
+  color: #ddd;
+  background: #303030
 }
 .hljs-keyword,
 .hljs-selector-tag,
-.hljs-meta .hljs-keyword,
-.hljs-doctag,
-.hljs-section {
-  /* var(--highlight-keyword) */
-  color: #88aece
+.hljs-literal,
+.hljs-section,
+.hljs-link {
+  color: white
 }
-.hljs-attr {
-  /* var(--highlight-attribute); */
-  color: #88aece
-}
-.hljs-attribute {
-  /* var(--highlight-symbol) */
-  color: #c59bc1
-}
-.hljs-name,
-.hljs-type,
-.hljs-number,
-.hljs-selector-id,
-.hljs-quote,
-.hljs-template-tag {
-  /* var(--highlight-namespace) */
-  color: #f08d49
-}
-.hljs-selector-class {
-  /* var(--highlight-keyword) */
-  color: #88aece
+.hljs-subst {
+  /* default */
+  
 }
 .hljs-string,
-.hljs-regexp,
-.hljs-symbol,
-.hljs-variable,
-.hljs-template-variable,
-.hljs-link,
-.hljs-selector-attr {
-  /* var(--highlight-variable) */
-  color: #b5bd68
-}
-.hljs-meta,
-.hljs-selector-pseudo {
-  /* var(--highlight-keyword) */
-  color: #88aece
-}
-.hljs-built_in,
 .hljs-title,
-.hljs-literal {
-  /* var(--highlight-literal) */
-  color: #f08d49
-}
+.hljs-name,
+.hljs-type,
+.hljs-attribute,
+.hljs-symbol,
 .hljs-bullet,
-.hljs-code {
-  /* var(--highlight-punctuation) */
-  color: #cccccc
+.hljs-built_in,
+.hljs-addition,
+.hljs-variable,
+.hljs-template-tag,
+.hljs-template-variable {
+  color: #d88
 }
-.hljs-meta .hljs-string {
-  /* var(--highlight-variable) */
-  color: #b5bd68
+.hljs-comment,
+.hljs-quote,
+.hljs-deletion,
+.hljs-meta {
+  color: #979797
 }
-.hljs-deletion {
-  /* var(--highlight-deletion) */
-  color: #de7176
-}
-.hljs-addition {
-  /* var(--highlight-addition) */
-  color: #76c490
-}
-.hljs-emphasis {
-  font-style: italic
-}
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-title,
+.hljs-section,
+.hljs-doctag,
+.hljs-type,
+.hljs-name,
 .hljs-strong {
   font-weight: bold
 }
-.hljs-formula,
-.hljs-operator,
-.hljs-params,
-.hljs-property,
-.hljs-punctuation,
-.hljs-tag {
-  /* purposely ignored */
-  
+.hljs-emphasis {
+  font-style: italic
 }
 }
 code,
@@ -1385,7 +1330,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #ff74da;
+    background: #fc37c9;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -1848,6 +1793,16 @@ pre code {
 }
 .back-to-top.back-to-top-on {
   bottom: 30px;
+}
+.reading-progress-bar {
+  --progress: 0;
+  background: #37c6c0;
+  height: 3px;
+  position: fixed;
+  z-index: 50;
+  width: var(--progress);
+  left: 0;
+  top: 0;
 }
 .rtl.post-body p,
 .rtl.post-body a,
@@ -3053,7 +3008,7 @@ header.header {
   white-space: nowrap;
 /* 核心参数：15s 表示滚动一圈的时间，linear 表示匀速，infinite 表示无限循环。
      如果你觉得滚动太快或太慢，可以修改 15s 这个数值 */
-  animation: tagMarquee 30s linear infinite;
+  animation: tagMarquee 24s linear infinite;
 }
 /* 3. 交互优化：鼠标悬停时暂停动画，方便点击！ */
 .tag-cloud-tags:hover {
@@ -3111,6 +3066,56 @@ header.header {
   .qimo-dashboard {
     grid-template-columns: 1fr;
   }
+}
+/* --- 1. 全局滚动条美化 --- */
+::-webkit-scrollbar {
+  width: 8px; /* 纵向滚动条宽度 */
+  height: 8px; /* 横向滚动条高度 */
+}
+::-webkit-scrollbar-track {
+  background: transparent; /* 轨道透明 */
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.2); /* 滑块浅灰色半透明 */
+  border-radius: 4px; /* 圆角 */
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0,0,0,0.5); /* 鼠标放上去时颜色加深 */
+}
+/* --- 2. 正文超链接动态下划线 --- */
+.post-body p a {
+  position: relative;
+  color: #555;
+  text-decoration: none;
+  border-bottom: none; /* 去除原生生硬的下划线 */
+  transition: color 0.2s;
+}
+.post-body p a:hover {
+  color: #000; /* 悬停时字体颜色加深 */
+}
+.post-body p a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #222;
+  transform: scaleX(0); /* 初始状态：下划线宽度为 0 */
+  transition: transform 0.3s ease-in-out; /* 动画过渡 */
+  transform-origin: center; /* 动画从中间向两边展开 */
+}
+.post-body p a:hover::after {
+  transform: scaleX(1); /* 悬停状态：下划线完全展开 */
+}
+/* --- 3. 引入 Fira Code 并开启连字特性 --- */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap");
+/* 将字体应用到所有代码块区域 */
+code,
+pre,
+.highlight {
+  font-family: 'Fira Code', 'JetBrains Mono', Consolas, monospace !important;
+  font-variant-ligatures: common-ligatures contextual; /* 开启连字渲染 */
 }
 @keyframes tagMarquee {
   0% {
