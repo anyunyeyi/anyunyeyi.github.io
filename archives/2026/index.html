@@ -77,7 +77,25 @@
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
-</head>
+<!-- hexo injector head_end start -->
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+  <style>
+    /* 给热力图外层加一个漂亮的白色卡片包装，对齐 NexT 主题风格 */
+    .github-calendar-box {
+      margin-bottom: 30px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px; /* 圆角与期末看板保持一致 */
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* 淡淡的阴影 */
+      border: 1px solid #eee;
+    }
+    /* 微调内部字体和边距 */
+    .github-calendar-box .text-muted {
+      font-size: 12px;
+      margin-top: 10px;
+    }
+  </style>
+<!-- hexo injector head_end end --></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
@@ -381,8 +399,8 @@
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2026/02/14/408-OS/" itemprop="url">
-            <span itemprop="name">考研408：操作系统</span>
+          <a class="post-title-link" href="/2026/02/14/408-%E8%AE%A1%E7%BB%84/" itemprop="url">
+            <span itemprop="name">考研408：计算机组成原理</span>
           </a>
       </div>
 
@@ -421,8 +439,8 @@
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2026/02/14/408-%E8%AE%A1%E7%BB%84/" itemprop="url">
-            <span itemprop="name">考研408：计算机组成原理</span>
+          <a class="post-title-link" href="/2026/02/14/408-OS/" itemprop="url">
+            <span itemprop="name">考研408：操作系统</span>
           </a>
       </div>
 
@@ -477,5 +495,28 @@
   <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
 </noscript>
 
-</body>
+<!-- hexo injector body_end start -->
+  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // 找到 NexT 主题归档页面的核心内容区
+      var contentDiv = document.querySelector('.content');
+      if (contentDiv) {
+        // 创建热力图的容器
+        var calDiv = document.createElement('div');
+        calDiv.className = 'calendar github-calendar-box';
+        calDiv.innerHTML = '<p style="text-align:center; color:#999;">正在同步 GitHub 活跃数据...</p>';
+        
+        // 将热力图插入到归档时间轴的最前面
+        contentDiv.insertBefore(calDiv, contentDiv.firstChild);
+        
+        // 初始化日历组件，填入你的 GitHub 用户名
+        GitHubCalendar(".calendar", "anyunyeyi", {
+          responsive: true,
+          tooltips: true
+        });
+      }
+    });
+  </script>
+<!-- hexo injector body_end end --></body>
 </html>
