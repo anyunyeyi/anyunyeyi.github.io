@@ -1330,7 +1330,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #fc37c9;
+    background: #66ff32;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2983,17 +2983,80 @@ header.header {
 .katex-display:focus {
   outline: none !important;
 }
-/* 分类页面多列布局优化 */
-.category-all-page .category-all {
-/* 设置为你想要的列数，比如 2 列或 3 列 */
-  column-count: 3;
-/* 两列之间的间距 */
-  column-gap: 40px;
+/* --- 分类页面：知识库卡片网格布局 --- */
+/* 1. 将原生的列表容器改为 Grid 网格布局 */
+.category-all-page .category-all > ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 设为两列，让卡片内部有足够空间 */
+  gap: 20px; /* 卡片之间的间距 */
+  padding: 0;
 }
-/* 防止单个主分类被从中间截断，分到两列显示 */
+/* 2. 将每个主分类设计为独立的“卡片” */
 .category-all-page .category-all > ul > li {
-  break-inside: avoid;
-  margin-bottom: 20px;
+  list-style: none; /* 去除原生黑点 */
+  background: #fdfdfd;
+  border: 1px solid #eaeaea;
+  border-radius: 10px; /* 圆角 */
+  padding: 20px 25px;
+  transition: all 0.3s ease;
+  margin-bottom: 0;
+}
+/* 卡片悬停时的浮动与阴影 */
+.category-all-page .category-all > ul > li:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transform: translateY(-2px);
+  border-color: #ddd;
+}
+/* 3. 主分类标题的美化 */
+.category-all-page .category-all > ul > li > a {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #222;
+  border-bottom: none;
+}
+/* 原生的文章数量小圈圈美化 */
+.category-list-count {
+  background: #f2f2f2;
+  color: #666;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 0.8em;
+  margin-left: 8px;
+}
+/* 4. 添加主分类和子分类之间的虚线分割 */
+.category-all-page .category-all > ul > li > ul {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px dashed #eee;
+  padding-left: 0;
+}
+/* 5. 子分类项的极客风美化 */
+.category-all-page .category-all > ul > li > ul > li {
+  list-style: none;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+/* 用自定义符号替换原生空心圆点 */
+.category-all-page .category-all > ul > li > ul > li::before {
+  content: "📁"; /* 也可以换成 "›" 或 "#" */
+  margin-right: 8px;
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+.category-all-page .category-all > ul > li > ul > li > a {
+  color: #555;
+  border-bottom: none;
+  transition: color 0.2s;
+}
+.category-all-page .category-all > ul > li > ul > li > a:hover {
+  color: #000;
+}
+/* 6. 手机端适配：屏幕变窄时自动变回单列 */
+@media (max-width: 768px) {
+  .category-all-page .category-all > ul {
+    grid-template-columns: 1fr;
+  }
 }
 /* --- 标签页单行自动滚动 (跑马灯) 效果 --- */
 /* 1. 父容器隐藏溢出，防止出现原生的底部滚动条 */
