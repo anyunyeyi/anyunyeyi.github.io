@@ -251,4 +251,50 @@
         <tag>线代</tag>
       </tags>
   </entry>
+  <entry>
+    <title>现代密码学复习笔记</title>
+    <url>/2026/02/16/%E7%8E%B0%E4%BB%A3%E5%AF%86%E7%A0%81%E5%AD%A6%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p><strong>核心目录概览：</strong></p>
+<ul>
+<li>章节复习
+<ul>
+<li>第1章 密码学概论</li>
+<li>第2章 密码学基础</li>
+<li>第3章 古典密码体制</li>
+<li>第4章 分组密码</li>
+<li>第5章 序列密码</li>
+<li>第6章 Hash函数和消息认证</li>
+<li>第7章 公钥密码体制</li>
+<li>第8章 数字签名技术</li>
+<li>第10章 密钥管理</li>
+</ul>
+</li>
+<li>学习通作业
+<ul>
+<li>第1章
+<ul>
+<li>填空题</li>
+<li>论述题</li>
+<li>计算题</li>
+</ul>
+</li>
+<li>… (更多细节请下载 PDF 查看)</li>
+</ul>
+</li>
+</ul>
+<h3 id="笔记阅读与下载"><a class="markdownIt-Anchor" href="#笔记阅读与下载"></a> 📄 笔记阅读与下载</h3>
+<blockquote>
+<p>本文档已由自动流水线完成云端同步与水印压制。配套开源项目见：<a href="https://github.com/anyunyeyi/AUST-Blockchain-Survival-Guide">安理区块链期末生存指南</a></p>
+</blockquote>
+<p>👉 <a href="/pdf/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.pdf">点击此处下载完整版 PDF 到本地</a></p>
+<iframe src="/pdf/密码学复习笔记.pdf" width="100%" height="800px" style="border: 1px solid #eee; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"></iframe>
+]]></content>
+      <categories>
+        <category>期末指南</category>
+      </categories>
+      <tags>
+        <tag>期末</tag>
+        <tag>密码学</tag>
+      </tags>
+  </entry>
 </search>
