@@ -78,7 +78,7 @@
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
-</head>
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
@@ -375,60 +375,29 @@
 <noscript>
   <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
 </noscript>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+<script>
+var options = {
+  bottom: '30px',
+  right: '30px',
+  left: 'unset',
+  time: '0.4s',
+  mixColor: '#fff',
+  backgroundColor: '#fff',
+  buttonColorDark: '#222',
+  buttonColorLight: '#fff',
+  saveInCookies: true,
+  label: '🌓',
+  autoMatchOsTheme: true
+}
+const darkmode = new Darkmode(options);
+window.darkmode = darkmode;
+darkmode.showWidget();
+</script>
 
 <!-- hexo injector body_end start -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // 判断当前是否在归档页面
-      if (window.location.pathname.includes('/archives/')) {
-        
-        var container = document.querySelector('.post-collapse') || document.querySelector('.post-block');
-        
-        if (container) {
-          // 创建漂亮的白色卡片
-          var calBox = document.createElement('div');
-          calBox.style.marginBottom = '30px';
-          calBox.style.padding = '20px 20px 10px 20px'; // 底部留白少一点
-          calBox.style.background = '#fff';
-          calBox.style.borderRadius = '10px';
-          calBox.style.border = '1px solid #eaeaea';
-          calBox.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.05)';
-          calBox.style.textAlign = 'center'; // 内容居中
-
-          // 添加一个小标题
-          var title = document.createElement('h3');
-          title.innerText = 'GitHub Contributions';
-          title.style.margin = '0 0 15px 0';
-          title.style.fontSize = '1.1em';
-          title.style.color = '#555';
-          title.style.borderBottom = 'none';
-
-          // 核心魔法：直接调用 ghchart API 生成你的动态 SVG 活跃图
-          var chartImg = document.createElement('img');
-          chartImg.src = 'https://ghchart.rshah.org/anyunyeyi'; // 绑定你的 GitHub 用户名
-          chartImg.alt = 'anyunyeyi 的 GitHub 活跃图';
-          chartImg.style.width = '100%';
-          chartImg.style.maxWidth = '750px'; // 防止在超大屏幕上拉伸过度
-          chartImg.style.margin = '0 auto';
-          
-          // 给图片加个链接，点击直接跳到你的 GitHub 主页
-          var link = document.createElement('a');
-          link.href = 'https://github.com/anyunyeyi';
-          link.target = '_blank';
-          link.style.borderBottom = 'none'; // 去除默认下划线
-          
-          link.appendChild(chartImg);
-          calBox.appendChild(title);
-          calBox.appendChild(link);
-          
-          // 将卡片插入到时间轴的最前面
-          container.parentNode.insertBefore(calBox, container);
-        }
-      }
-    });
-  </script>
-
-  <div id="global-aplayer"></div>
+  <div id="global-aplayer" class="darkmode-ignore" style="position: relative; z-index: 99999;"></div>
   
   <style>
     /* 保证整个悬浮播放器位于最顶层 */
@@ -484,6 +453,7 @@
       
       let canvas = document.createElement('canvas');
       canvas.id = 'audio-visualizer';
+      canvas.classList.add('darkmode-ignore'); // <--- 加上这行，给紫色音轨套上免疫护盾
       canvas.style.position = 'fixed';
       canvas.style.bottom = '0';
       canvas.style.left = '0';
@@ -559,6 +529,57 @@
           draw();
         }
       });
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // 判断当前是否在归档页面
+      if (window.location.pathname.includes('/archives/')) {
+        
+        var container = document.querySelector('.post-collapse') || document.querySelector('.post-block');
+        
+        if (container) {
+          // 创建漂亮的白色卡片
+          var calBox = document.createElement('div');
+          calBox.style.marginBottom = '30px';
+          calBox.style.padding = '20px 20px 10px 20px'; // 底部留白少一点
+          calBox.style.background = '#fff';
+          calBox.style.borderRadius = '10px';
+          calBox.style.border = '1px solid #eaeaea';
+          calBox.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.05)';
+          calBox.style.textAlign = 'center'; // 内容居中
+
+          // 添加一个小标题
+          var title = document.createElement('h3');
+          title.innerText = 'GitHub Contributions';
+          title.style.margin = '0 0 15px 0';
+          title.style.fontSize = '1.1em';
+          title.style.color = '#555';
+          title.style.borderBottom = 'none';
+
+          // 核心魔法：直接调用 ghchart API 生成你的动态 SVG 活跃图
+          var chartImg = document.createElement('img');
+          chartImg.src = 'https://ghchart.rshah.org/anyunyeyi'; // 绑定你的 GitHub 用户名
+          chartImg.alt = 'anyunyeyi 的 GitHub 活跃图';
+          chartImg.style.width = '100%';
+          chartImg.style.maxWidth = '750px'; // 防止在超大屏幕上拉伸过度
+          chartImg.style.margin = '0 auto';
+          
+          // 给图片加个链接，点击直接跳到你的 GitHub 主页
+          var link = document.createElement('a');
+          link.href = 'https://github.com/anyunyeyi';
+          link.target = '_blank';
+          link.style.borderBottom = 'none'; // 去除默认下划线
+          
+          link.appendChild(chartImg);
+          calBox.appendChild(title);
+          calBox.appendChild(link);
+          
+          // 将卡片插入到时间轴的最前面
+          container.parentNode.insertBefore(calBox, container);
+        }
+      }
     });
   </script>
 <!-- hexo injector body_end end --></body>

@@ -1330,7 +1330,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #8f77ff;
+    background: #3b0dff;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3179,6 +3179,39 @@ pre,
 .highlight {
   font-family: 'Fira Code', 'JetBrains Mono', Consolas, monospace !important;
   font-variant-ligatures: common-ligatures contextual; /* 开启连字渲染 */
+}
+/* ==========================================
+   修复 Darkmode.js 翻车问题 (极客暗黑模式补丁)
+   ========================================== */
+/* 1. 手动把顽固的亮色大区块强行涂黑 */
+.darkmode--activated .main-inner,
+.darkmode--activated .header-inner,
+.darkmode--activated .sidebar-inner,
+.darkmode--activated .comments {
+  background: #252525 !important;
+  border-color: #333 !important; /* 调整边框颜色 */
+}
+/* 2. 修正文章正文和标题的文字颜色，保证高对比度 */
+.darkmode--activated .post-block,
+.darkmode--activated .post-body,
+.darkmode--activated .post-title-link,
+.darkmode--activated p,
+.darkmode--activated li {
+  color: #ccc !important;
+}
+/* 3. 抢救 PDF、图片和视频 (核心魔法)
+   思路：既然插件把它们反转成了 X 光片，我们就再加一层反转滤镜，“负负得正”！*/
+.darkmode--activated img,
+.darkmode--activated iframe,
+.darkmode--activated video {
+  filter: invert(1) hue-rotate(180deg) !important;
+  opacity: 0.85; /* 在深色模式下稍微压低图片/PDF的亮度，更护眼 */
+  transition: opacity 0.3s ease;
+}
+/* 当鼠标悬停在 PDF 或图片上时，恢复 100% 亮度 */
+.darkmode--activated img:hover,
+.darkmode--activated iframe:hover {
+  opacity: 1;
 }
 @keyframes tagMarquee {
   0% {
