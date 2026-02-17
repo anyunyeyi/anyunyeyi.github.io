@@ -311,13 +311,13 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2026/02/14/408-%E8%AE%A1%E7%BD%91/" rel="prev" title="考研408：计算机网络">
-                  <i class="fa fa-angle-left"></i> 考研408：计算机网络
+                <a href="/2026/02/14/408-%E8%AE%A1%E7%BB%84/" rel="prev" title="考研408：计算机组成原理">
+                  <i class="fa fa-angle-left"></i> 考研408：计算机组成原理
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2026/02/14/408-%E8%AE%A1%E7%BB%84/" rel="next" title="考研408：计算机组成原理">
-                  考研408：计算机组成原理 <i class="fa fa-angle-right"></i>
+                <a href="/2026/02/14/408-DS/" rel="next" title="考研408：数据结构">
+                  考研408：数据结构 <i class="fa fa-angle-right"></i>
                 </a>
             </div>
           </div>
@@ -416,6 +416,140 @@
           container.parentNode.insertBefore(calBox, container);
         }
       }
+    });
+  </script>
+
+  <div id="global-aplayer"></div>
+  
+  <style>
+    /* 保证整个悬浮播放器位于最顶层 */
+    .aplayer.aplayer-fixed {
+        z-index: 99999 !important;
+    }
+    /* 强制解除部分博客主题对 ul/li 列表样式的全局限制，防止专辑列表排版崩溃 */
+    .aplayer .aplayer-list ol li {
+        list-style: none !important;
+        margin: 0 !important;
+        overflow: hidden !important;
+    }
+  </style>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const ap = new APlayer({
+        container: document.getElementById('global-aplayer'),
+        fixed: true,        
+        autoplay: false,    
+        theme: '#222222',   
+        order: 'list',      
+        listFolded: true,   
+        audio: [
+          { name: '1990年的春天', artist: '李志', url: '/music/1990年的春天.m4a', cover: '/music/cover我爱南京.jpg' },
+          { name: '爱', artist: '李志', url: '/music/爱.m4a', cover: '/music/cover我爱南京.jpg' },
+          { name: '爸爸在天上看我（我爱南京未发表歌曲）', artist: '李志', url: '/music/爸爸在天上看我（我爱南京未发表歌曲）.m4a', cover: '/music/cover我爱南京.jpg' },
+          { name: '苍井空', artist: '李志', url: '/music/苍井空.m4a', cover: '/music/cover我爱南京.jpg' },
+          { name: '倒影', artist: '李志', url: '/music/倒影.m4a', cover: '/music/cover我爱南京.jpg' },
+          { name: '冬妮娅', artist: '李志', url: '/music/冬妮娅.m4a', cover: '/music/cover我爱南京.jpg' },
+          { name: '歌（我爱南京未发表歌曲）', artist: '李志', url: '/music/歌（我爱南京未发表歌曲）.m4a', cover: '/music/cover我爱南京.jpg' },
+          { name: '家乡', artist: '李志', url: '/music/家乡.m4a', cover: '/music/cover我爱南京.jpg' },
+          { name: '结婚', artist: '李志', url: '/music/结婚.m4a', cover: '/music/cover我爱南京.jpg' },
+          { name: '美丽的梭罗河', artist: '李志', url: '/music/美丽的梭罗河.m4a', cover: '/music/cover我爱南京.jpg' },
+          { name: '米店', artist: '李志', url: '/music/米店.m4a', cover: '/music/cover我爱南京.jpg' },
+          { name: '思念观世音', artist: '李志', url: '/music/思念观世音.m4a', cover: '/music/cover我爱南京.jpg' },
+          { name: '天空之城', artist: '李志', url: '/music/天空之城.m4a', cover: '/music/cover我爱南京.jpg' },
+          { name: '听妈妈讲那过去的事情', artist: '李志', url: '/music/听妈妈讲那过去的事情.m4a', cover: '/music/cover我爱南京.jpg' },
+          { name: '鸵鸟', artist: '李志', url: '/music/鸵鸟.m4a', cover: '/music/cover我爱南京.jpg' },
+          { name: '意味', artist: '李志', url: '/music/意味.m4a', cover: '/music/cover我爱南京.jpg' },
+          { name: '再见', artist: '李志', url: '/music/再见.m4a', cover: '/music/cover我爱南京.jpg' },
+          { name: '在那遥远的地方', artist: '李志', url: '/music/在那遥远的地方.m4a', cover: '/music/cover我爱南京.jpg' }
+        ]
+      });
+      window.globalAPlayer = ap; 
+
+      /* ==========================================
+         魔法升级：纤细 + 重力悬浮点的灵动频谱
+      ========================================== */
+      
+      let canvas = document.createElement('canvas');
+      canvas.id = 'audio-visualizer';
+      canvas.style.position = 'fixed';
+      canvas.style.bottom = '0';
+      canvas.style.left = '0';
+      canvas.style.width = '100%';
+      canvas.style.height = '100px'; 
+      canvas.style.zIndex = '10';    
+      canvas.style.pointerEvents = 'none';
+      document.body.appendChild(canvas);
+
+      let ctx = canvas.getContext('2d');
+      let audioCtx = null;
+
+      function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = 100;
+      }
+      window.addEventListener('resize', resizeCanvas);
+      resizeCanvas();
+
+      ap.on('play', function () {
+        if (!audioCtx) {
+          audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+          let source = audioCtx.createMediaElementSource(ap.audio);
+          let analyser = audioCtx.createAnalyser();
+          
+          source.connect(analyser);
+          analyser.connect(audioCtx.destination);
+          
+          analyser.fftSize = 512; 
+          analyser.smoothingTimeConstant = 0.85; 
+          
+          let bufferLength = analyser.frequencyBinCount;
+          let dataArray = new Uint8Array(bufferLength);
+          
+          let capYPositionArray = []; 
+          
+          function draw() {
+            requestAnimationFrame(draw);
+            analyser.getByteFrequencyData(dataArray);
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            let barWidth = 3; 
+            let gap = 3;
+            let maxBars = Math.floor(canvas.width / (barWidth + gap));
+            let x = 0;
+            
+            for(let i = 0; i < maxBars; i++) {
+              let dataIndex = Math.floor(i * (bufferLength * 0.6) / maxBars);
+              let barHeight = (dataArray[dataIndex] / 255) * (canvas.height - 10);
+              if (barHeight < 2) barHeight = 2; 
+              
+              if (capYPositionArray.length <= i) {
+                  capYPositionArray.push(barHeight);
+              }
+              if (barHeight < capYPositionArray[i]) {
+                  capYPositionArray[i] -= 0.8; 
+                  if (capYPositionArray[i] < 2) capYPositionArray[i] = 2;
+              } else {
+                  capYPositionArray[i] = barHeight;
+              }
+
+              // 小帽子 (较深紫色)
+              ctx.fillStyle = 'rgba(184, 184, 255, 0.9)'; 
+              ctx.fillRect(x, canvas.height - capYPositionArray[i] - 4, barWidth, 3);
+
+              // 音轨细线 (极浅紫色)
+              ctx.fillStyle = 'rgba(241, 241, 255, 0.8)'; 
+              ctx.fillRect(x, canvas.height - barHeight, barWidth, barHeight);
+              
+              x += barWidth + gap;
+            }
+          }
+          draw();
+        }
+      });
     });
   </script>
 <!-- hexo injector body_end end --></body>
