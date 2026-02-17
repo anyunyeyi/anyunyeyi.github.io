@@ -445,13 +445,13 @@ darkmode.showWidget();
   </script>
 
   <style>
-    /* 修复暗黑模式下的字色冲突，保持播放器自身的精致感 */
+    /* 修复暗黑模式下的字色冲突 */
     .darkmode--activated .aplayer-list-title,
     .darkmode--activated .aplayer-list-author {
         color: #333 !important;
     }
     
-    /* 稍微调整一下吸底播放器的层级，防止被页脚挡住 */
+    /* 调整吸底播放器的层级 */
     .aplayer.aplayer-fixed {
         z-index: 9999 !important;
     }
@@ -462,48 +462,47 @@ darkmode.showWidget();
   
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      // 1. 创建播放器容器
       let apContainer = document.createElement('div');
       apContainer.id = 'global-aplayer';
       apContainer.className = 'darkmode-ignore';
-      
-      // 2. 直接挂载到 body，彻底脱离 NexT 侧边栏的魔爪
       document.body.appendChild(apContainer);
 
-      // 3. 初始化 APlayer (开启 fixed 吸底悬浮模式)
       const ap = new APlayer({
         container: apContainer,
-        fixed: true,        // 【核心修改】：开启左下角吸底悬浮模式
-        mini: true,         // 默认收起为迷你模式，点击展开
+        fixed: true,
+        mini: true,
         autoplay: false,    
-        theme: '#b8b8ff',   // 主题色配合你的律动条颜色
+        theme: '#b8b8ff',   
         order: 'list',      
-        listFolded: true,   // 歌单默认折叠，点击列表图标弹出
-        listMaxHeight: '30vh', // 限制一下展开的高度，占屏幕 30%
+        listFolded: true,   
+        listMaxHeight: '30vh',
         audio: [
+          /* --- 《我爱南京》官方曲序部分 --- */
           { name: '1990年的春天', artist: '李志', url: '/music/1990年的春天.m4a', cover: '/music/cover我爱南京.jpg' },
-          { name: '爱', artist: '李志', url: '/music/爱.m4a', cover: '/music/cover我爱南京.jpg' },
-          { name: '爸爸在天上看我（我爱南京未发表歌曲）', artist: '李志', url: '/music/爸爸在天上看我（我爱南京未发表歌曲）.m4a', cover: '/music/cover我爱南京.jpg' },
-          { name: '苍井空', artist: '李志', url: '/music/苍井空.m4a', cover: '/music/cover我爱南京.jpg' },
+          { name: '再见', artist: '李志', url: '/music/再见.m4a', cover: '/music/cover我爱南京.jpg' },
+          { name: '听妈妈讲那过去的事情', artist: '李志', url: '/music/听妈妈讲那过去的事情.m4a', cover: '/music/cover我爱南京.jpg' },
+          { name: '在那遥远的地方', artist: '李志', url: '/music/在那遥远的地方.m4a', cover: '/music/cover我爱南京.jpg' },
+          { name: '天空之城', artist: '李志', url: '/music/天空之城.m4a', cover: '/music/cover我爱南京.jpg' },
           { name: '倒影', artist: '李志', url: '/music/倒影.m4a', cover: '/music/cover我爱南京.jpg' },
-          { name: '冬妮娅', artist: '李志', url: '/music/冬妮娅.m4a', cover: '/music/cover我爱南京.jpg' },
-          { name: '歌（我爱南京未发表歌曲）', artist: '李志', url: '/music/歌（我爱南京未发表歌曲）.m4a', cover: '/music/cover我爱南京.jpg' },
+          { name: '爱', artist: '李志', url: '/music/爱.m4a', cover: '/music/cover我爱南京.jpg' },
           { name: '家乡', artist: '李志', url: '/music/家乡.m4a', cover: '/music/cover我爱南京.jpg' },
           { name: '结婚', artist: '李志', url: '/music/结婚.m4a', cover: '/music/cover我爱南京.jpg' },
-          { name: '美丽的梭罗河', artist: '李志', url: '/music/美丽的梭罗河.m4a', cover: '/music/cover我爱南京.jpg' },
+          { name: '意味', artist: '李志', url: '/music/意味.m4a', cover: '/music/cover我爱南京.jpg' },
+          { name: '苍井空', artist: '李志', url: '/music/苍井空.m4a', cover: '/music/cover我爱南京.jpg' },
+          { name: '鸵鸟', artist: '李志', url: '/music/鸵鸟.m4a', cover: '/music/cover我爱南京.jpg' },
           { name: '米店', artist: '李志', url: '/music/米店.m4a', cover: '/music/cover我爱南京.jpg' },
           { name: '思念观世音', artist: '李志', url: '/music/思念观世音.m4a', cover: '/music/cover我爱南京.jpg' },
-          { name: '天空之城', artist: '李志', url: '/music/天空之城.m4a', cover: '/music/cover我爱南京.jpg' },
-          { name: '听妈妈讲那过去的事情', artist: '李志', url: '/music/听妈妈讲那过去的事情.m4a', cover: '/music/cover我爱南京.jpg' },
-          { name: '鸵鸟', artist: '李志', url: '/music/鸵鸟.m4a', cover: '/music/cover我爱南京.jpg' },
-          { name: '意味', artist: '李志', url: '/music/意味.m4a', cover: '/music/cover我爱南京.jpg' },
-          { name: '再见', artist: '李志', url: '/music/再见.m4a', cover: '/music/cover我爱南京.jpg' },
-          { name: '在那遥远的地方', artist: '李志', url: '/music/在那遥远的地方.m4a', cover: '/music/cover我爱南京.jpg' }
+          { name: '美丽的梭罗河', artist: '李志', url: '/music/美丽的梭罗河.m4a', cover: '/music/cover我爱南京.jpg' },
+          { name: '冬妮娅', artist: '李志', url: '/music/冬妮娅.m4a', cover: '/music/cover我爱南京.jpg' },
+          
+          /* --- 非正式专辑/未发表歌曲 顺延至末尾 --- */
+          { name: '爸爸在天上看我（我爱南京未发表歌曲）', artist: '李志', url: '/music/爸爸在天上看我（我爱南京未发表歌曲）.m4a', cover: '/music/cover我爱南京.jpg' },
+          { name: '歌（我爱南京未发表歌曲）', artist: '李志', url: '/music/歌（我爱南京未发表歌曲）.m4a', cover: '/music/cover我爱南京.jpg' }
         ]
       });
       window.globalAPlayer = ap; 
 
-      // 4. 底部的紫色律动音轨代码保持完全不变
+      /* 底部紫色律动 Canvas 部分保持不变 */
       let canvas = document.createElement('canvas');
       canvas.id = 'audio-visualizer';
       canvas.classList.add('darkmode-ignore');
@@ -531,49 +530,34 @@ darkmode.showWidget();
           audioCtx = new (window.AudioContext || window.webkitAudioContext)();
           let source = audioCtx.createMediaElementSource(ap.audio);
           let analyser = audioCtx.createAnalyser();
-          
           source.connect(analyser);
           analyser.connect(audioCtx.destination);
-          
           analyser.fftSize = 512; 
           analyser.smoothingTimeConstant = 0.85; 
-          
           let bufferLength = analyser.frequencyBinCount;
           let dataArray = new Uint8Array(bufferLength);
-          
           let capYPositionArray = []; 
-          
           function draw() {
             requestAnimationFrame(draw);
             analyser.getByteFrequencyData(dataArray);
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-            
-            let barWidth = 3; 
-            let gap = 3;
+            let barWidth = 3, gap = 3, x = 0;
             let maxBars = Math.floor(canvas.width / (barWidth + gap));
-            let x = 0;
-            
             for(let i = 0; i < maxBars; i++) {
               let dataIndex = Math.floor(i * (bufferLength * 0.6) / maxBars);
               let barHeight = (dataArray[dataIndex] / 255) * (canvas.height - 10);
               if (barHeight < 2) barHeight = 2; 
-              
-              if (capYPositionArray.length <= i) {
-                  capYPositionArray.push(barHeight);
-              }
+              if (capYPositionArray.length <= i) capYPositionArray.push(barHeight);
               if (barHeight < capYPositionArray[i]) {
                   capYPositionArray[i] -= 0.8; 
                   if (capYPositionArray[i] < 2) capYPositionArray[i] = 2;
               } else {
                   capYPositionArray[i] = barHeight;
               }
-
               ctx.fillStyle = 'rgba(184, 184, 255, 0.9)'; 
               ctx.fillRect(x, canvas.height - capYPositionArray[i] - 4, barWidth, 3);
-
               ctx.fillStyle = 'rgba(241, 241, 255, 0.8)'; 
               ctx.fillRect(x, canvas.height - barHeight, barWidth, barHeight);
-              
               x += barWidth + gap;
             }
           }
@@ -582,5 +566,5 @@ darkmode.showWidget();
       });
     });
   </script>
-<!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/miku.model.json"},"display":{"position":"right","width":150,"height":300,"hOffset":90,"vOffset":-20},"mobile":{"show":false},"react":{"opacityDefault":1,"opacityOnHover":1},"dialog":{"enable":true,"hitokoto":true},"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/miku.model.json"},"display":{"position":"right","width":160,"height":320,"hOffset":90,"vOffset":-20},"mobile":{"show":false},"react":{"opacityDefault":0.9,"opacityOnHover":1},"dialog":{"enable":true,"hitokoto":true},"script":{"every day":"2026 考研人，今天也要在代码与数学之间探索呀！","tap body":"哎呀！别乱摸，快去刷数学一真题，复习 408 考点！","tap face":"摸摸头，数据结构和计组肯定稳了！"},"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
