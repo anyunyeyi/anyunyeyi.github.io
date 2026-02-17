@@ -305,8 +305,8 @@
             <div class="post-nav-item">
             </div>
             <div class="post-nav-item">
-                <a href="/2026/02/14/%E6%95%B0%E4%B8%80-%E9%AB%98%E6%95%B0/" rel="next" title="考研数学：高等数学">
-                  考研数学：高等数学 <i class="fa fa-angle-right"></i>
+                <a href="/2026/02/14/%E6%95%B0%E4%B8%80-%E7%BA%BF%E4%BB%A3/" rel="next" title="考研数学：线性代数">
+                  考研数学：线性代数 <i class="fa fa-angle-right"></i>
                 </a>
             </div>
           </div>
@@ -429,29 +429,15 @@ darkmode.showWidget();
   </script>
 
   <style>
-    /* 侧边栏播放器专属外观定制 */
-    .sidebar-aplayer-container {
-        margin-top: 20px;
-        border-radius: 8px;
-        /* 【关键修改】：删除 overflow: hidden; 否则会裁切掉展开的歌单 */
-        box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
-        background: #fff;
-    }
-    
-    /* 强制覆盖主题原生列表样式，防止歌单排版错乱被隐藏 */
-    .aplayer .aplayer-list {
-        display: block !important; /* 确保歌单整体不被主题隐藏 */
-    }
-    .aplayer .aplayer-list ol li {
-        list-style: none !important;
-        margin: 0 !important;
-        overflow: hidden !important;
-    }
-    
-    /* 修复暗黑模式下播放器内部的字色冲突 */
+    /* 修复暗黑模式下的字色冲突，保持播放器自身的精致感 */
     .darkmode--activated .aplayer-list-title,
     .darkmode--activated .aplayer-list-author {
         color: #333 !important;
+    }
+    
+    /* 稍微调整一下吸底播放器的层级，防止被页脚挡住 */
+    .aplayer.aplayer-fixed {
+        z-index: 9999 !important;
     }
   </style>
   
@@ -460,30 +446,24 @@ darkmode.showWidget();
   
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      // 1. 创建播放器的 HTML 容器
+      // 1. 创建播放器容器
       let apContainer = document.createElement('div');
       apContainer.id = 'global-aplayer';
-      apContainer.className = 'sidebar-aplayer-container darkmode-ignore';
+      apContainer.className = 'darkmode-ignore';
       
-      // 2. 核心魔法：寻找左侧边栏，并把播放器挂载进去
-      let sidebar = document.querySelector('.sidebar-inner');
-      if (sidebar) {
-          sidebar.appendChild(apContainer);
-      } else {
-          // 备用：万一没找到侧边栏（比如特殊页面），挂载到 body 下方
-          document.body.appendChild(apContainer); 
-      }
+      // 2. 直接挂载到 body，彻底脱离 NexT 侧边栏的魔爪
+      document.body.appendChild(apContainer);
 
-      // 3. 初始化 APlayer
+      // 3. 初始化 APlayer (开启 fixed 吸底悬浮模式)
       const ap = new APlayer({
         container: apContainer,
-        fixed: false,       // 【核心改动 1：关闭左下角悬浮模式】
-        mini: false,        // 【核心改动 2：使用常规矩形面板布局】
+        fixed: true,        // 【核心修改】：开启左下角吸底悬浮模式
+        mini: true,         // 默认收起为迷你模式，点击展开
         autoplay: false,    
-        theme: '#222222',   
+        theme: '#b8b8ff',   // 主题色配合你的律动条颜色
         order: 'list',      
-        listFolded: false,       // 【修改】：改为 false，默认直接展开歌单
-        listMaxHeight: '220px',  // 【新增】：限制歌单高度，超出部分会自动出现丝滑滚动条
+        listFolded: true,   // 歌单默认折叠，点击列表图标弹出
+        listMaxHeight: '30vh', // 限制一下展开的高度，占屏幕 30%
         audio: [
           { name: '1990年的春天', artist: '李志', url: '/music/1990年的春天.m4a', cover: '/music/cover我爱南京.jpg' },
           { name: '爱', artist: '李志', url: '/music/爱.m4a', cover: '/music/cover我爱南京.jpg' },
