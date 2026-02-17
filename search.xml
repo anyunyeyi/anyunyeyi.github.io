@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>考研408：计算机网络</title>
+    <url>/2026/02/14/408-%E8%AE%A1%E7%BD%91/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="计算机网络"><a class="markdownIt-Anchor" href="#计算机网络"></a> 计算机网络</h1>
+<p><strong>待更新列表：</strong></p>
+<ul>
+<li></li>
+</ul>
+]]></content>
+      <categories>
+        <category>408</category>
+        <category>计网</category>
+      </categories>
+      <tags>
+        <tag>408</tag>
+        <tag>计网</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>考研408：数据结构</title>
     <url>/2026/02/14/408-DS/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="数据结构"><a class="markdownIt-Anchor" href="#数据结构"></a> 数据结构</h1>
@@ -14,28 +32,10 @@
         <category>DS</category>
       </categories>
       <tags>
-        <tag>DS</tag>
         <tag>408</tag>
+        <tag>DS</tag>
         <tag>算法</tag>
         <tag>C</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>考研408：操作系统</title>
-    <url>/2026/02/14/408-OS/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="操作系统"><a class="markdownIt-Anchor" href="#操作系统"></a> 操作系统</h1>
-<p><strong>待更新列表：</strong></p>
-<ul>
-<li></li>
-</ul>
-]]></content>
-      <categories>
-        <category>408</category>
-        <category>OS</category>
-      </categories>
-      <tags>
-        <tag>408</tag>
-        <tag>OS</tag>
       </tags>
   </entry>
   <entry>
@@ -54,6 +54,24 @@
       <tags>
         <tag>408</tag>
         <tag>计组</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>考研408：操作系统</title>
+    <url>/2026/02/14/408-OS/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="操作系统"><a class="markdownIt-Anchor" href="#操作系统"></a> 操作系统</h1>
+<p><strong>待更新列表：</strong></p>
+<ul>
+<li></li>
+</ul>
+]]></content>
+      <categories>
+        <category>408</category>
+        <category>OS</category>
+      </categories>
+      <tags>
+        <tag>408</tag>
+        <tag>OS</tag>
       </tags>
   </entry>
   <entry>
@@ -114,24 +132,6 @@
       </tags>
   </entry>
   <entry>
-    <title>考研数学：概率论与数理统计</title>
-    <url>/2026/02/14/%E6%95%B0%E4%B8%80-%E6%A6%82%E7%8E%87%E8%AE%BA/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="概率论"><a class="markdownIt-Anchor" href="#概率论"></a> 概率论</h1>
-<p><strong>待更新列表：</strong></p>
-<ul>
-<li></li>
-</ul>
-]]></content>
-      <categories>
-        <category>数一</category>
-        <category>概率论</category>
-      </categories>
-      <tags>
-        <tag>考研数学</tag>
-        <tag>概率论</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>考研数学：线性代数</title>
     <url>/2026/02/14/%E6%95%B0%E4%B8%80-%E7%BA%BF%E4%BB%A3/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="线性代数"><a class="markdownIt-Anchor" href="#线性代数"></a> 线性代数</h1>
@@ -169,24 +169,115 @@
 ]]></content>
   </entry>
   <entry>
-    <title>操作系统慕课版课后习题</title>
-    <url>/2026/02/16/%E6%9C%9F%E6%9C%AB-OS%E4%B9%A0%E9%A2%98/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>整理了慕课版教材章节重点习题（部分内容出现历年试卷中）。</p>
+    <title>现代密码学复习笔记</title>
+    <url>/2026/02/16/%E6%9C%9F%E6%9C%AB-%E5%AF%86%E7%A0%81%E5%AD%A6%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>核心目录概览：</strong></p>
+<ul>
+<li>章节复习
+<ul>
+<li>第1章 密码学概论</li>
+<li>第2章 密码学基础</li>
+<li>第3章 古典密码体制</li>
+<li>第4章 分组密码</li>
+<li>第5章 序列密码</li>
+<li>第6章 Hash函数和消息认证</li>
+<li>第7章 公钥密码体制</li>
+<li>第8章 数字签名技术</li>
+<li>第10章 密钥管理</li>
+</ul>
+</li>
+<li>学习通作业
+<ul>
+<li>第1章
+<ul>
+<li>填空题</li>
+<li>论述题</li>
+<li>计算题</li>
+</ul>
+</li>
+<li>… (更多细节请下载 PDF 查看)</li>
+</ul>
+</li>
+</ul>
 <h3 id="笔记阅读与下载"><a class="markdownIt-Anchor" href="#笔记阅读与下载"></a> 📄 笔记阅读与下载</h3>
 <blockquote>
 <p>本文档已由自动流水线完成云端同步与水印压制。配套开源项目见：<a href="https://github.com/anyunyeyi/AUST-Blockchain-Survival-Guide">安理区块链期末生存指南</a></p>
 </blockquote>
-<p>👉 <a href="/pdf/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%85%95%E8%AF%BE%E7%89%88%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98.pdf">点击此处下载完整版 PDF 到本地</a></p>
-<iframe src="/pdf/操作系统慕课版课后习题.pdf" width="100%" height="800px" style="border: 1px solid #eee; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"></iframe>
+<p>👉 <a href="/pdf/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.pdf">点击此处下载完整版 PDF 到本地</a></p>
+<iframe src="/pdf/密码学复习笔记.pdf" width="100%" height="800px" style="border: 1px solid #eee; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"></iframe>
 ]]></content>
       <categories>
         <category>期末指南</category>
-        <category>重点习题</category>
+        <category>复习笔记</category>
       </categories>
       <tags>
-        <tag>OS</tag>
-        <tag>复习</tag>
-        <tag>习题</tag>
+        <tag>期末</tag>
+        <tag>密码学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>考研数学：概率论与数理统计</title>
+    <url>/2026/02/14/%E6%95%B0%E4%B8%80-%E6%A6%82%E7%8E%87%E8%AE%BA/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="概率论"><a class="markdownIt-Anchor" href="#概率论"></a> 概率论</h1>
+<p><strong>待更新列表：</strong></p>
+<ul>
+<li></li>
+</ul>
+]]></content>
+      <categories>
+        <category>数一</category>
+        <category>概率论</category>
+      </categories>
+      <tags>
+        <tag>考研数学</tag>
+        <tag>概率论</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>分布式系统复习笔记</title>
+    <url>/2026/02/16/%E6%9C%9F%E6%9C%AB-%E5%88%86%E5%B8%83%E5%BC%8F%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>核心目录概览：</strong></p>
+<ul>
+<li>章节复习
+<ul>
+<li>第1章 分布式架构</li>
+<li>第2章 分布式应用服务拆分</li>
+<li>第3章 分布式调用</li>
+<li>第4章 分布式协同</li>
+<li>第5章 分布式计算</li>
+<li>第6章 分布式存储</li>
+<li>第7章 分布式算法
+<ul>
+<li>基本概念</li>
+<li>Paxos共识协议</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>学习通作业
+<ul>
+<li>平时测验</li>
+<li>作业2</li>
+<li>作业3</li>
+<li>重修作业</li>
+<li>… (更多细节请下载 PDF 查看)</li>
+</ul>
+</li>
+</ul>
+<h3 id="笔记阅读与下载"><a class="markdownIt-Anchor" href="#笔记阅读与下载"></a> 📄 笔记阅读与下载</h3>
+<blockquote>
+<p>本文档已由自动流水线完成云端同步与水印压制。配套开源项目见：<a href="https://github.com/anyunyeyi/AUST-Blockchain-Survival-Guide">安理区块链期末生存指南</a></p>
+</blockquote>
+<p>👉 <a href="/pdf/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.pdf">点击此处下载完整版 PDF 到本地</a></p>
+<iframe src="/pdf/分布式系统复习笔记.pdf" width="100%" height="800px" style="border: 1px solid #eee; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"></iframe>
+]]></content>
+      <categories>
+        <category>期末指南</category>
+        <category>复习笔记</category>
+      </categories>
+      <tags>
+        <tag>期末</tag>
+        <tag>分布式</tag>
       </tags>
   </entry>
   <entry>
@@ -205,24 +296,6 @@
       <tags>
         <tag>考研数学</tag>
         <tag>高数</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>考研408：计算机网络</title>
-    <url>/2026/02/14/408-%E8%AE%A1%E7%BD%91/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="计算机网络"><a class="markdownIt-Anchor" href="#计算机网络"></a> 计算机网络</h1>
-<p><strong>待更新列表：</strong></p>
-<ul>
-<li></li>
-</ul>
-]]></content>
-      <categories>
-        <category>408</category>
-        <category>计网</category>
-      </categories>
-      <tags>
-        <tag>408</tag>
-        <tag>计网</tag>
       </tags>
   </entry>
   <entry>
@@ -273,50 +346,24 @@
       </tags>
   </entry>
   <entry>
-    <title>分布式系统复习笔记</title>
-    <url>/2026/02/16/%E6%9C%9F%E6%9C%AB-%E5%88%86%E5%B8%83%E5%BC%8F%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>核心目录概览：</strong></p>
-<ul>
-<li>章节复习
-<ul>
-<li>第1章 分布式架构</li>
-<li>第2章 分布式应用服务拆分</li>
-<li>第3章 分布式调用</li>
-<li>第4章 分布式协同</li>
-<li>第5章 分布式计算</li>
-<li>第6章 分布式存储</li>
-<li>第7章 分布式算法
-<ul>
-<li>基本概念</li>
-<li>Paxos共识协议</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>学习通作业
-<ul>
-<li>平时测验</li>
-<li>作业2</li>
-<li>作业3</li>
-<li>重修作业</li>
-<li>… (更多细节请下载 PDF 查看)</li>
-</ul>
-</li>
-</ul>
+    <title>操作系统慕课版课后习题</title>
+    <url>/2026/02/16/%E6%9C%9F%E6%9C%AB-OS%E4%B9%A0%E9%A2%98/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>整理了慕课版教材章节重点习题（部分内容出现历年试卷中）。</p>
 <h3 id="笔记阅读与下载"><a class="markdownIt-Anchor" href="#笔记阅读与下载"></a> 📄 笔记阅读与下载</h3>
 <blockquote>
 <p>本文档已由自动流水线完成云端同步与水印压制。配套开源项目见：<a href="https://github.com/anyunyeyi/AUST-Blockchain-Survival-Guide">安理区块链期末生存指南</a></p>
 </blockquote>
-<p>👉 <a href="/pdf/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.pdf">点击此处下载完整版 PDF 到本地</a></p>
-<iframe src="/pdf/分布式系统复习笔记.pdf" width="100%" height="800px" style="border: 1px solid #eee; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"></iframe>
+<p>👉 <a href="/pdf/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%85%95%E8%AF%BE%E7%89%88%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98.pdf">点击此处下载完整版 PDF 到本地</a></p>
+<iframe src="/pdf/操作系统慕课版课后习题.pdf" width="100%" height="800px" style="border: 1px solid #eee; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"></iframe>
 ]]></content>
       <categories>
         <category>期末指南</category>
-        <category>复习笔记</category>
+        <category>重点习题</category>
       </categories>
       <tags>
-        <tag>期末</tag>
-        <tag>分布式</tag>
+        <tag>OS</tag>
+        <tag>复习</tag>
+        <tag>习题</tag>
       </tags>
   </entry>
   <entry>
@@ -458,56 +505,9 @@
         <category>试卷重排</category>
       </categories>
       <tags>
-        <tag>复习</tag>
         <tag>信安数学</tag>
+        <tag>复习</tag>
         <tag>真题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>现代密码学复习笔记</title>
-    <url>/2026/02/16/%E6%9C%9F%E6%9C%AB-%E5%AF%86%E7%A0%81%E5%AD%A6%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>核心目录概览：</strong></p>
-<ul>
-<li>章节复习
-<ul>
-<li>第1章 密码学概论</li>
-<li>第2章 密码学基础</li>
-<li>第3章 古典密码体制</li>
-<li>第4章 分组密码</li>
-<li>第5章 序列密码</li>
-<li>第6章 Hash函数和消息认证</li>
-<li>第7章 公钥密码体制</li>
-<li>第8章 数字签名技术</li>
-<li>第10章 密钥管理</li>
-</ul>
-</li>
-<li>学习通作业
-<ul>
-<li>第1章
-<ul>
-<li>填空题</li>
-<li>论述题</li>
-<li>计算题</li>
-</ul>
-</li>
-<li>… (更多细节请下载 PDF 查看)</li>
-</ul>
-</li>
-</ul>
-<h3 id="笔记阅读与下载"><a class="markdownIt-Anchor" href="#笔记阅读与下载"></a> 📄 笔记阅读与下载</h3>
-<blockquote>
-<p>本文档已由自动流水线完成云端同步与水印压制。配套开源项目见：<a href="https://github.com/anyunyeyi/AUST-Blockchain-Survival-Guide">安理区块链期末生存指南</a></p>
-</blockquote>
-<p>👉 <a href="/pdf/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.pdf">点击此处下载完整版 PDF 到本地</a></p>
-<iframe src="/pdf/密码学复习笔记.pdf" width="100%" height="800px" style="border: 1px solid #eee; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"></iframe>
-]]></content>
-      <categories>
-        <category>期末指南</category>
-        <category>复习笔记</category>
-      </categories>
-      <tags>
-        <tag>期末</tag>
-        <tag>密码学</tag>
       </tags>
   </entry>
 </search>

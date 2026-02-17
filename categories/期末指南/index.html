@@ -397,18 +397,81 @@ darkmode.showWidget();
 </script>
 
 <!-- hexo injector body_end start -->
-  <div id="global-aplayer" class="darkmode-ignore" style="position: relative; z-index: 99999;"></div>
-  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // 判断当前是否在归档页面
+      if (window.location.pathname.includes('/archives/')) {
+        
+        var container = document.querySelector('.post-collapse') || document.querySelector('.post-block');
+        
+        if (container) {
+          // 创建漂亮的白色卡片
+          var calBox = document.createElement('div');
+          calBox.style.marginBottom = '30px';
+          calBox.style.padding = '20px 20px 10px 20px'; // 底部留白少一点
+          calBox.style.background = '#fff';
+          calBox.style.borderRadius = '10px';
+          calBox.style.border = '1px solid #eaeaea';
+          calBox.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.05)';
+          calBox.style.textAlign = 'center'; // 内容居中
+
+          // 添加一个小标题
+          var title = document.createElement('h3');
+          title.innerText = 'GitHub Contributions';
+          title.style.margin = '0 0 15px 0';
+          title.style.fontSize = '1.1em';
+          title.style.color = '#555';
+          title.style.borderBottom = 'none';
+
+          // 核心魔法：直接调用 ghchart API 生成你的动态 SVG 活跃图
+          var chartImg = document.createElement('img');
+          chartImg.src = 'https://ghchart.rshah.org/anyunyeyi'; // 绑定你的 GitHub 用户名
+          chartImg.alt = 'anyunyeyi 的 GitHub 活跃图';
+          chartImg.style.width = '100%';
+          chartImg.style.maxWidth = '750px'; // 防止在超大屏幕上拉伸过度
+          chartImg.style.margin = '0 auto';
+          
+          // 给图片加个链接，点击直接跳到你的 GitHub 主页
+          var link = document.createElement('a');
+          link.href = 'https://github.com/anyunyeyi';
+          link.target = '_blank';
+          link.style.borderBottom = 'none'; // 去除默认下划线
+          
+          link.appendChild(chartImg);
+          calBox.appendChild(title);
+          calBox.appendChild(link);
+          
+          // 将卡片插入到时间轴的最前面
+          container.parentNode.insertBefore(calBox, container);
+        }
+      }
+    });
+  </script>
+
   <style>
-    /* 保证整个悬浮播放器位于最顶层 */
-    .aplayer.aplayer-fixed {
-        z-index: 99999 !important;
+    /* 侧边栏播放器专属外观定制 */
+    .sidebar-aplayer-container {
+        margin-top: 20px;
+        border-radius: 8px;
+        /* 【关键修改】：删除 overflow: hidden; 否则会裁切掉展开的歌单 */
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+        background: #fff;
     }
-    /* 强制解除部分博客主题对 ul/li 列表样式的全局限制，防止专辑列表排版崩溃 */
+    
+    /* 强制覆盖主题原生列表样式，防止歌单排版错乱被隐藏 */
+    .aplayer .aplayer-list {
+        display: block !important; /* 确保歌单整体不被主题隐藏 */
+    }
     .aplayer .aplayer-list ol li {
         list-style: none !important;
         margin: 0 !important;
         overflow: hidden !important;
+    }
+    
+    /* 修复暗黑模式下播放器内部的字色冲突 */
+    .darkmode--activated .aplayer-list-title,
+    .darkmode--activated .aplayer-list-author {
+        color: #333 !important;
     }
   </style>
   
@@ -417,13 +480,30 @@ darkmode.showWidget();
   
   <script>
     document.addEventListener('DOMContentLoaded', function() {
+      // 1. 创建播放器的 HTML 容器
+      let apContainer = document.createElement('div');
+      apContainer.id = 'global-aplayer';
+      apContainer.className = 'sidebar-aplayer-container darkmode-ignore';
+      
+      // 2. 核心魔法：寻找左侧边栏，并把播放器挂载进去
+      let sidebar = document.querySelector('.sidebar-inner');
+      if (sidebar) {
+          sidebar.appendChild(apContainer);
+      } else {
+          // 备用：万一没找到侧边栏（比如特殊页面），挂载到 body 下方
+          document.body.appendChild(apContainer); 
+      }
+
+      // 3. 初始化 APlayer
       const ap = new APlayer({
-        container: document.getElementById('global-aplayer'),
-        fixed: true,        
+        container: apContainer,
+        fixed: false,       // 【核心改动 1：关闭左下角悬浮模式】
+        mini: false,        // 【核心改动 2：使用常规矩形面板布局】
         autoplay: false,    
         theme: '#222222',   
         order: 'list',      
-        listFolded: true,   
+        listFolded: false,       // 【修改】：改为 false，默认直接展开歌单
+        listMaxHeight: '220px',  // 【新增】：限制歌单高度，超出部分会自动出现丝滑滚动条
         audio: [
           { name: '1990年的春天', artist: '李志', url: '/music/1990年的春天.m4a', cover: '/music/cover我爱南京.jpg' },
           { name: '爱', artist: '李志', url: '/music/爱.m4a', cover: '/music/cover我爱南京.jpg' },
@@ -447,13 +527,10 @@ darkmode.showWidget();
       });
       window.globalAPlayer = ap; 
 
-      /* ==========================================
-         魔法升级：纤细 + 重力悬浮点的灵动频谱
-      ========================================== */
-      
+      // 4. 底部的紫色律动音轨代码保持完全不变
       let canvas = document.createElement('canvas');
       canvas.id = 'audio-visualizer';
-      canvas.classList.add('darkmode-ignore'); // <--- 加上这行，给紫色音轨套上免疫护盾
+      canvas.classList.add('darkmode-ignore');
       canvas.style.position = 'fixed';
       canvas.style.bottom = '0';
       canvas.style.left = '0';
@@ -515,11 +592,9 @@ darkmode.showWidget();
                   capYPositionArray[i] = barHeight;
               }
 
-              // 小帽子 (较深紫色)
               ctx.fillStyle = 'rgba(184, 184, 255, 0.9)'; 
               ctx.fillRect(x, canvas.height - capYPositionArray[i] - 4, barWidth, 3);
 
-              // 音轨细线 (极浅紫色)
               ctx.fillStyle = 'rgba(241, 241, 255, 0.8)'; 
               ctx.fillRect(x, canvas.height - barHeight, barWidth, barHeight);
               
@@ -531,56 +606,5 @@ darkmode.showWidget();
       });
     });
   </script>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // 判断当前是否在归档页面
-      if (window.location.pathname.includes('/archives/')) {
-        
-        var container = document.querySelector('.post-collapse') || document.querySelector('.post-block');
-        
-        if (container) {
-          // 创建漂亮的白色卡片
-          var calBox = document.createElement('div');
-          calBox.style.marginBottom = '30px';
-          calBox.style.padding = '20px 20px 10px 20px'; // 底部留白少一点
-          calBox.style.background = '#fff';
-          calBox.style.borderRadius = '10px';
-          calBox.style.border = '1px solid #eaeaea';
-          calBox.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.05)';
-          calBox.style.textAlign = 'center'; // 内容居中
-
-          // 添加一个小标题
-          var title = document.createElement('h3');
-          title.innerText = 'GitHub Contributions';
-          title.style.margin = '0 0 15px 0';
-          title.style.fontSize = '1.1em';
-          title.style.color = '#555';
-          title.style.borderBottom = 'none';
-
-          // 核心魔法：直接调用 ghchart API 生成你的动态 SVG 活跃图
-          var chartImg = document.createElement('img');
-          chartImg.src = 'https://ghchart.rshah.org/anyunyeyi'; // 绑定你的 GitHub 用户名
-          chartImg.alt = 'anyunyeyi 的 GitHub 活跃图';
-          chartImg.style.width = '100%';
-          chartImg.style.maxWidth = '750px'; // 防止在超大屏幕上拉伸过度
-          chartImg.style.margin = '0 auto';
-          
-          // 给图片加个链接，点击直接跳到你的 GitHub 主页
-          var link = document.createElement('a');
-          link.href = 'https://github.com/anyunyeyi';
-          link.target = '_blank';
-          link.style.borderBottom = 'none'; // 去除默认下划线
-          
-          link.appendChild(chartImg);
-          calBox.appendChild(title);
-          calBox.appendChild(link);
-          
-          // 将卡片插入到时间轴的最前面
-          container.parentNode.insertBefore(calBox, container);
-        }
-      }
-    });
-  </script>
-<!-- hexo injector body_end end --></body>
+<!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/miku.model.json"},"display":{"position":"right","width":150,"height":300,"hOffset":90,"vOffset":-20},"mobile":{"show":false},"react":{"opacityDefault":1,"opacityOnHover":1},"dialog":{"enable":true,"hitokoto":true},"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
