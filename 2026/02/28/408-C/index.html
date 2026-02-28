@@ -20,30 +20,29 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"dark"},"prism":{"enable":false},"mac_panel":true,"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js" defer></script>
 
-    <meta name="description" content="👋 你好，我是 anyunyeyi (安云野逸)  一名在代码与数学之间探索的大学生，长期主义践行者。 这里是我搭建的个人知识管理（PKM）与输出工作台。目前主要在这里沉淀和同步：   🎓 目前状态  💻 计算机基础 (408)：数据结构、计组、操作系统与计网的硬核学习笔记。 📐 考研数学一：高数、线代、概率论的推导与错题复盘。 🔗 开源项目：如《安理区块链期末生存指南》等复习资料归档">
-<meta property="og:type" content="website">
-<meta property="og:title" content="关于我">
-<meta property="og:url" content="http://example.com/about/index.html">
+    <meta name="description" content="数据结构 待更新列表：  C语言基础速成">
+<meta property="og:type" content="article">
+<meta property="og:title" content="考研408：C语言">
+<meta property="og:url" content="http://example.com/2026/02/28/408-C/index.html">
 <meta property="og:site_name" content="CS &amp; Math | anyunyeyi">
-<meta property="og:description" content="👋 你好，我是 anyunyeyi (安云野逸)  一名在代码与数学之间探索的大学生，长期主义践行者。 这里是我搭建的个人知识管理（PKM）与输出工作台。目前主要在这里沉淀和同步：   🎓 目前状态  💻 计算机基础 (408)：数据结构、计组、操作系统与计网的硬核学习笔记。 📐 考研数学一：高数、线代、概率论的推导与错题复盘。 🔗 开源项目：如《安理区块链期末生存指南》等复习资料归档">
+<meta property="og:description" content="数据结构 待更新列表：  C语言基础速成">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/images/wechat.jpg">
-<meta property="article:published_time" content="2026-02-03T16:00:00.000Z">
-<meta property="article:modified_time" content="2026-02-16T13:21:44.618Z">
+<meta property="article:published_time" content="2026-02-27T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-02-28T12:50:14.940Z">
 <meta property="article:author" content="anyunyeyi">
-<meta property="article:tag" content="考研, 408, 数学, 计算机, Python">
+<meta property="article:tag" content="408">
+<meta property="article:tag" content="C语言">
+<meta property="article:tag" content="基础">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/images/wechat.jpg">
 
 
-<link rel="canonical" href="http://example.com/about/">
+<link rel="canonical" href="http://example.com/2026/02/28/408-C/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":true,"permalink":"http://example.com/about/index.html","path":"about/index.html","title":"关于我"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2026/02/28/408-C/","path":"2026/02/28/408-C/","title":"考研408：C语言"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>关于我 | CS & Math | anyunyeyi
-</title>
+<title>考研408：C语言 | CS & Math | anyunyeyi</title>
   
 
 
@@ -170,7 +169,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%A0%E5%A5%BD%E6%88%91%E6%98%AF-anyunyeyi-%E5%AE%89%E4%BA%91%E9%87%8E%E9%80%B8"><span class="nav-number">1.</span> <span class="nav-text"> 👋 你好，我是 anyunyeyi (安云野逸)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9B%AE%E5%89%8D%E7%8A%B6%E6%80%81"><span class="nav-number">1.1.</span> <span class="nav-text"> 🎓 目前状态</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%B8%8F-%E6%8A%80%E6%9C%AF%E6%A0%88%E4%B8%8E%E5%B7%A5%E5%85%B7"><span class="nav-number">1.2.</span> <span class="nav-text"> 🛠️ 技术栈与工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8D%9A%E5%AE%A2%E5%88%9D%E8%A1%B7%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%8E%E6%95%B0%E5%AD%A6"><span class="nav-number">1.3.</span> <span class="nav-text"> 📝 博客初衷：计算机与数学</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%81%94%E7%B3%BB%E6%88%91"><span class="nav-number">1.4.</span> <span class="nav-text"> 📫 联系我</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E6%B3%A8%E6%88%91%E7%9A%84%E5%85%AC%E4%BC%97%E5%8F%B7"><span class="nav-number">1.5.</span> <span class="nav-text"> 📱 关注我的公众号</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="nav-number">1.</span> <span class="nav-text"> 数据结构</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -220,72 +219,109 @@
 
     </div>
 
-    <div class="main-inner page posts-expand">
+    <div class="main-inner post posts-expand">
 
 
-    
-    
-    
-    <div class="post-block" lang="zh-CN"><header class="post-header">
+  
 
-<h1 class="post-title" itemprop="name headline">关于我
-</h1>
 
-<div class="post-meta-container">
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2026/02/28/408-C/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="anyunyeyi">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CS & Math | anyunyeyi">
+      <meta itemprop="description" content="一名在代码与数学之间探索的大学生的个人博客">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="考研408：C语言 | CS & Math | anyunyeyi">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          考研408：C语言
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2026-02-28 00:00:00 / 修改时间：20:50:14" itemprop="dateCreated datePublished" datetime="2026-02-28T00:00:00+08:00">2026-02-28</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/408/" itemprop="url" rel="index"><span itemprop="name">408</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/408/C%E8%AF%AD%E8%A8%80/" itemprop="url" rel="index"><span itemprop="name">C语言</span></a>
+        </span>
+    </span>
+
+  
 </div>
 
-</header>
+        </div>
+      </header>
 
-      
-      
-      
-      <div class="post-body">
-          <h2 id="你好我是-anyunyeyi-安云野逸"><a class="markdownIt-Anchor" href="#你好我是-anyunyeyi-安云野逸"></a> 👋 你好，我是 anyunyeyi (安云野逸)</h2>
-<blockquote>
-<p>一名在代码与数学之间探索的大学生，长期主义践行者。<br />
-这里是我搭建的个人知识管理（PKM）与输出工作台。目前主要在这里沉淀和同步：</p>
-</blockquote>
-<h3 id="目前状态"><a class="markdownIt-Anchor" href="#目前状态"></a> 🎓 目前状态</h3>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h1 id="数据结构"><a class="markdownIt-Anchor" href="#数据结构"></a> 数据结构</h1>
+<p><strong>待更新列表：</strong></p>
 <ul>
-<li>💻 <strong>计算机基础 (408)</strong>：数据结构、计组、操作系统与计网的硬核学习笔记。</li>
-<li>📐 <strong>考研数学一</strong>：高数、线代、概率论的推导与错题复盘。</li>
-<li>🔗 <strong>开源项目</strong>：如《安理区块链期末生存指南》等复习资料归档。</li>
+<li>C语言基础速成</li>
 </ul>
-<h3 id="️-技术栈与工具"><a class="markdownIt-Anchor" href="#️-技术栈与工具"></a> 🛠️ 技术栈与工具</h3>
-<ul>
-<li><strong>编程语言</strong>: Python (数据处理/脚本), C++</li>
-<li><strong>核心工具</strong>: VS Code, Git, LaTeX (数学公式排版)</li>
-<li><strong>正在死磕</strong>: 考研数学, 408 计算机综合</li>
-</ul>
-<h3 id="博客初衷计算机与数学"><a class="markdownIt-Anchor" href="#博客初衷计算机与数学"></a> 📝 博客初衷：计算机与数学</h3>
-<p>这里是我的<strong>第二大脑</strong>。我将在这里分享：</p>
-<ol>
-<li>🧪 <strong>考研复盘</strong>: 记录数学和408专业课的深度思考与重难点突破（拒绝机械抄书）。</li>
-<li>💻 <strong>学习笔记</strong>: 记录计算机底层原理、算法以及数学探索的成长路径。</li>
-</ol>
-<h3 id="联系我"><a class="markdownIt-Anchor" href="#联系我"></a> 📫 联系我</h3>
-<ul>
-<li><strong>GitHub</strong>: <a target="_blank" rel="noopener" href="https://github.com/anyunyeyi">github.com/anyunyeyi</a></li>
-<li><strong>Email</strong>: <a href="mailto:anyunyey@gmail.com">anyunyey@gmail.com</a></li>
-</ul>
-<h3 id="关注我的公众号"><a class="markdownIt-Anchor" href="#关注我的公众号"></a> 📱 关注我的公众号</h3>
-<p>除了在这里进行长篇的深度技术沉淀，我也会在微信公众号分享日常的学习复盘、效率工具折腾日常以及简短干货。</p>
-<p><strong>👇 欢迎扫码或微信搜索关注我 👇</strong></p>
-<div align="center">
-  <img src="/images/wechat.jpg" alt="微信公众号二维码" width="250"/>
-  <p><i>（同名公众号：安云野逸）</i></p>
-</div>
-<hr />
-<p><em>“种一棵树最好的时间是十年前，其次是现在。”</em></p>
 
-      </div>
-      
-      
-      
     </div>
 
     
     
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/C%E8%AF%AD%E8%A8%80/" rel="tag"># C语言</a>
+              <a href="/tags/408/" rel="tag"># 408</a>
+              <a href="/tags/%E5%9F%BA%E7%A1%80/" rel="tag"># 基础</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2026/02/28/%E6%95%B0%E4%B8%80-%E9%AB%98%E6%95%B0/" rel="prev" title="考研数学：高等数学">
+                  <i class="fa fa-angle-left"></i> 考研数学：高等数学
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
 
 
 </div>
